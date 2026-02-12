@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inovare Sistemas | Soluções Fiscais e Logísticas</title>
+    <title>Inovare Soluções e Sistemas</title>
     <link rel="icon" href="./img/favicon.png" type="image/png">
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -19,7 +19,6 @@
             font-family: 'Montserrat', sans-serif;
         }
 
-        /* Gradientes e Efeitos Especiais */
         .bg-dark-gradient {
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
         }
@@ -33,9 +32,17 @@
             transition: all 0.3s ease;
         }
 
-        /* Rolagem Suave */
         html {
             scroll-behavior: smooth;
+        }
+
+        .icon-custom {
+            color: #1e293b !important;
+            transition: color 0.3s ease;
+        }
+
+        .group:hover .icon-custom {
+            color: #03FEFD !important;
         }
     </style>
 </head>
@@ -79,8 +86,8 @@
 
             <div class="hidden md:block">
                 <a href="#contato"
-                    class="bg-cyan-500 text-white text-sm font-bold px-5 py-2.5 rounded-full hover:bg-cyan-400 transition shadow-lg shadow-cyan-500/20">
-                    Área do Cliente
+                    class="text-slate-900 text-sm font-bold px-5 py-2.5 rounded-full transition shadow-lg" style="background:#03FEFD;hover:bg-opacity-80">
+                    ÁREA DO CLIENTE
                 </a>
             </div>
         </div>
@@ -129,179 +136,159 @@
         </svg>
     </div>
 
-    <section id="servicos" class="py-24 bg-white relative">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-24">
-                <h2 class="text-3xl md:text-4xl font-black mb-4 mt-2" style="color: #1e293b" data-aos="fade-up">Nossos Serviços</h2>
+   <section id="servicos" class="py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-24">
+            <h2 class="text-3xl md:text-4xl font-black mb-4 mt-2" style="color: #1e293b" data-aos="fade-up">NOSSOS SERVIÇOS</h2>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-8">
+            <div class="w-full md:w-1/3 max-w-sm p-8 bg-gray-50 rounded-3xl card-hover border-2 border-cyan-500/20 group hover:bg-white hover:shadow-xl hover:border-cyan-500 transition-all duration-300"
+                data-aos="fade-up" data-aos-delay="200">
+                <div
+                    class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm transition-colors duration-300 group-hover:bg-[#1e293b]">
+                    <i
+                        class="fas fa-project-diagram text-3xl transition-colors text-[#1e293b] group-hover:text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-800">Conciliação de Cartões</h3>
+                <p class="text-slate-600 leading-relaxed text-sm">Pare de perder dinheiro com taxas inesperadas.
+                    Automatize a conferência de vendas, identifique divergências rapidamente e tenha total
+                    transparência sobre seus recebíveis.</p>
             </div>
 
-            <div class="flex flex-wrap justify-center gap-8">
-                <div class="w-full md:w-1/3 max-w-sm p-8 bg-gray-50 rounded-3xl card-hover border border-gray-100 group hover:bg-white hover:shadow-xl hover:border-cyan-100 transition-all duration-300"
-                    data-aos="fade-up" data-aos-delay="200">
-                    <div
-                        class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:bg-cyan-500 transition-colors duration-300">
-                        <i
-                            class="fas fa-project-diagram text-cyan-600 text-3xl group-hover:text-white transition-colors"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 text-slate-800">Conciliação de Cartões</h3>
-                    <p class="text-slate-600 leading-relaxed text-sm">Pare de perder dinheiro com taxas inesperadas.
-                        Automatize a conferência de vendas, identifique divergências rapidamente e tenha total
-                        transparência sobre seus recebíveis.</p>
+            <a href="./consultoria/index.html"
+                class="w-full md:w-1/3 max-w-sm p-8 bg-gray-50 rounded-3xl card-hover border-2 border-cyan-500/20 group hover:bg-white hover:shadow-xl hover:border-cyan-500 transition-all duration-300 block"
+                data-aos="fade-up" data-aos-delay="300">
+                <div
+                    class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm transition-colors duration-300 group-hover:bg-[#1e293b]">
+                    <i
+                        class="fas fa-balance-scale text-3xl transition-colors text-[#1e293b] group-hover:text-white"></i>
                 </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-800">Consultoria Fiscal</h3>
+                <p class="text-slate-600 leading-relaxed text-sm">Simplificamos a burocracia fiscal brasileira com
+                    apoio de tecnologia e conhecimento especializado, ajudando sua empresa a operar com segurança e
+                    conformidade.</p>
+            </a>
 
-
-                <a href="./consultoria/index.html"
-                    class="w-full md:w-1/3 max-w-sm p-8 bg-gray-50 rounded-3xl card-hover border border-gray-100 group hover:bg-white hover:shadow-xl hover:border-blue-100 transition-all duration-300 block"
-                    data-aos="fade-up" data-aos-delay="300">
-                    <div
-                        class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:bg-blue-600 transition-colors duration-300">
-                        <i
-                            class="fas fa-balance-scale text-blue-600 text-3xl group-hover:text-white transition-colors"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 text-slate-800">Consultoria Fiscal</h3>
-                    <p class="text-slate-600 leading-relaxed text-sm">Simplificamos a burocracia fiscal brasileira com
-                        apoio de tecnologia e conhecimento especializado, ajudando sua empresa a operar com segurança e
-                        conformidade.</p>
-                </a>
-
-                <div class="w-full md:w-1/3 max-w-sm p-8 bg-gray-50 rounded-3xl card-hover border border-gray-100 group hover:bg-white hover:shadow-xl hover:border-indigo-100 transition-all duration-300"
-                    data-aos="fade-up" data-aos-delay="400">
-                    <div
-                        class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:bg-indigo-600 transition-colors duration-300">
-                        <i class="fas fa-code text-indigo-600 text-3xl group-hover:text-white transition-colors"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 text-slate-800">Integração entre Sistemas</h3>
-                    <p class="text-slate-600 leading-relaxed text-sm">Soluções modernas e robustas para integrar seu ERP
-                        a softwares fiscais e conciliadores de cartão, garantindo qualidade, confiabilidade e
-                        simplicidade nos processos.</p>
+            <div class="w-full md:w-1/3 max-w-sm p-8 bg-gray-50 rounded-3xl card-hover border-2 border-cyan-500/20 group hover:bg-white hover:shadow-xl hover:border-cyan-500 transition-all duration-300"
+                data-aos="fade-up" data-aos-delay="400">
+                <div
+                    class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm transition-colors duration-300 group-hover:bg-[#1e293b]">
+                    <i class="fas fa-code text-3xl transition-colors text-[#1e293b] group-hover:text-white"></i>
                 </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-800">Integração entre Sistemas</h3>
+                <p class="text-slate-600 leading-relaxed text-sm">Soluções modernas e robustas para integrar seu ERP
+                    a softwares fiscais e conciliadores de cartão, garantindo qualidade, confiabilidade e
+                    simplicidade nos processos.</p>
             </div>
         </div>
-    </section>
-
-    <div style="position: relative; line-height: 0; background-color: #ffffff;">
+    </div>
+<div style="position: relative; line-height: 0; background-color: #ffffff;">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="display: block; width: 100%; height: auto;">
             <path fill="#151F31" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,261.3C960,256,1056,224,1152,202.7C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg> 
+        </svg>
     </div>
-    <section id="sobre" class="py-24 text-white relative overflow-hidden" style="background:#151F31;">
 
-        <div class="absolute top-0 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-[100px] pointer-events-none">
-        </div>
-        <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-600/10 rounded-full blur-[80px] pointer-events-none">
-        </div>
+    
+   <section id="sobre" class="py-24 text-white relative overflow-hidden" style="background:#151F31;">
+
+        <div class="absolute top-0 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-600/10 rounded-full blur-[80px] pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="grid md:grid-cols-2 gap-16 items-center">
 
                 <div data-aos="fade-right">
                     <div class="relative group">
-                        <div
-                            class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000">
-                        </div>
+                        <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
 
-                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"
+                        <img src="./img/imagem_2.jpg"
                             alt="Equipe Inovare"
                             class="relative rounded-3xl shadow-2xl border border-white/10 w-full object-cover h-[500px]">
-
-                        <div class="absolute -bottom-6 -right-6 bg-slate-900/90 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-cyan-500/30"
-                            data-aos="fade-up" data-aos-delay="400">
-                            <div class="flex items-center gap-4">
-                                <div
-                                    class="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center text-white text-xl font-bold shadow-lg shadow-cyan-500/40">
-                                    <i class="fas fa-trophy"></i>
-                                </div>
-                                <div>
-                                    <p class="text-3xl font-black text-white">10+</p>
-                                    <p class="text-cyan-400 text-xs font-bold uppercase tracking-wider">Anos de
-                                        Experiência</p>
-                                </div>
-                            </div>
+                        
                         </div>
-                    </div>
                 </div>
 
                 <div data-aos="fade-left">
-                    <span class="text-cyan-400 font-bold tracking-widest uppercase text-xs mb-2 block">Nossa
-                        Essência</span>
-                    <h2 class="text-3xl md:text-4xl font-black mb-6 leading-tight">
-                        Quem somos?
-
+                    <h2 class="text-3xl md:text-4xl font-black mb-6 leading-tight text-[#03FEFD]">
+                        QUEM SOMOS?
                     </h2>
 
-                    <p class="text-slate-300 text-lg mb-6 leading-relaxed">
-                        A INOVARE Sistemas foi fundada em 2021, localizada em Ribeirão Preto, no interior de São Paulo e
+                    <p class="text-slate-300 text-lg mb-6 leading-relaxed text-justify">
+                        A <b>Inovare Soluções e Sistemas</b> foi fundada em 2021, localizada em Ribeirão Preto, no interior de São Paulo e
                         atua desenvolvendo e implantando sistemas. Oferecemos serviços de integração de sistemas, temos
                         experiência em conectar o seu ERP com software fiscal e conciliador de cartão.
+                        <br><br>
                         Utilizamos tecnologia moderna, robustas seguindo tendências de mercado, e nosso maior
                         compromisso é com a qualidade e simplicidade. Venha nos conhecer, agende uma conversa conosco,
                         nosso time vai atender e apresentar nosso portifólio de serviços.
                     </p>
                 </div>
-    </section>
 
-    <div class="shape-divider" aria-hidden="true">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" style="display:block;width:100%;height:100px;">
-            <path d="M0 0v100-79.4a1892 1892 0 0 1 500 0l500 66.7V0H0Z" fill="#151F31"></path>
-        </svg>
-    </div>
-
-
-    <section id="institucional" class="py-24 bg-white text-cyan-500 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-            <div data-aos="fade-right">
-                <div class="relative">
-                    <div class="absolute inset-0 bg-cyan-500 blur-2xl opacity-20 transform rotate-6 rounded-3xl"></div>
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
-                        alt="Time Inovare" class="relative rounded-3xl shadow-2xl border border-white/10 z-10">
-                </div>
-            </div>
-            <div data-aos="fade-left">
-                <span class="text-cyan-400 font-bold tracking-widest uppercase text-xs">Nossa Essência</span>
-                <h2 class="text-3xl font-black mb-6 mt-2">Por que a Inovare?</h2>
-                <p class="text-slate-300 mb-8 text-lg">Não somos apenas desenvolvedores. Somos consultores de negócios
-                    que entendem de código.</p>
-
-                <div class="space-y-8">
-                    <div class="flex gap-4 group">
-                        <div
-                            class="w-12 h-12 bg-cyan-500/20 rounded-xl flex items-center justify-center text-cyan-400 text-xl group-hover:bg-cyan-500 group-hover:text-white transition duration-300 shrink-0">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-xl font-bold mb-1">Experiência de Mercado</h4>
-                            <p class="text-slate-400 text-sm leading-relaxed">Sócios com vasta vivência em grandes
-                                consultorias (Big 4) e projetos de alta complexidade.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4 group">
-                        <div
-                            class="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center text-purple-400 text-xl group-hover:bg-purple-500 group-hover:text-white transition duration-300 shrink-0">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-xl font-bold mb-1">Segurança e Qualidade</h4>
-                            <p class="text-slate-400 text-sm leading-relaxed">Código limpo, seguro e escalável. Seguimos
-                                as melhores práticas de LGPD e segurança da informação.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4 group">
-                        <div
-                            class="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center text-emerald-400 text-xl group-hover:bg-emerald-500 group-hover:text-white transition duration-300 shrink-0">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-xl font-bold mb-1">Atendimento Nacional</h4>
-                            <p class="text-slate-400 text-sm leading-relaxed">Sede em Ribeirão Preto - SP com estrutura
-                                completa para atendimento remoto em todo o Brasil.</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
+
+ <div style="position: relative; line-height: 0; background-color: #151F31; overflow: hidden;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="display: block; width: 100%; height: auto; margin-bottom: -1px;">
+        <path fill="#ffffff" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,261.3C960,256,1056,224,1152,202.7C1248,181,1344,171,1392,165.3L1440,160L1440,320.5L1392,320.5C1344,320.5,1248,320.5,1152,320.5C1056,320.5,960,320.5,864,320.5C768,320.5,672,320.5,576,320.5C480,320.5,384,320.5,288,320.5C192,320.5,96,320.5,48,320.5L0,320.5Z"></path>
+    </svg>
+</div>
+
+
+   <section id="institucional" class="py-24 bg-white text-[#182134] overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+        
+        <div data-aos="fade-right">
+            <div class="relative">
+                <div class="absolute inset-0 bg-cyan-500 blur-2xl opacity-20 transform rotate-6 rounded-3xl"></div>
+                <img src="./img/imagem_3.jpg" alt="Homem pensando" class="relative rounded-3xl shadow-2xl border border-white/10 z-10">
+            </div>
+        </div>
+
+        <div data-aos="fade-left">
+            <h2 class="text-3xl font-black mb-6 mt-2 text-cyan-500">PORQUE A INOVARE?</h2>
+
+            <div class="space-y-8">
+                
+                <div class="flex gap-4 group">
+                    <div class="w-12 h-12 bg-[#182134]/10 rounded-xl flex items-center justify-center text-[#182134] text-xl group-hover:bg-cyan-500 group-hover:text-white transition duration-300 shrink-0">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-1 text-[#182134]">Experiência de Mercado</h4>
+                        <p class="text-black text-sm leading-relaxed">Sócios com vasta vivência em grandes consultorias e projetos de alta complexidade.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 group">
+                    <div class="w-12 h-12 bg-[#182134]/10 rounded-xl flex items-center justify-center text-[#182134] text-xl group-hover:bg-cyan-500 group-hover:text-white transition duration-300 shrink-0">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-1 text-[#182134]">Segurança e Qualidade</h4>
+                        <p class="text-black text-sm leading-relaxed">Código limpo, seguro e escalável. Seguimos as melhores práticas de LGPD e segurança da informação.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 group">
+                    <div class="w-12 h-12 bg-[#182134]/10 rounded-xl flex items-center justify-center text-[#182134] text-xl group-hover:bg-cyan-500 group-hover:text-white transition duration-300 shrink-0">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-1 text-[#182134]">Especializada em integrações</h4>
+                        <p class="text-black text-sm leading-relaxed">Equipe com especialistas na área de integração entre sistemas.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+</div>
 
     <section id="contato" class="py-24 bg-white relative">
         <div class="max-w-4xl mx-auto px-6">
@@ -390,7 +377,7 @@
             </div>
             <div
                 class="pt-8 border-t border-slate-800 text-center flex flex-col md:flex-row justify-between items-center">
-                <p>© 2026 Inovare Sistemas. Todos os direitos reservados.</p>
+                <p>© 2026 Inovare Soluções e Sistemas. Todos os direitos reservados.</p>
                 <p>Ribeirão Preto - SP</p>
             </div>
         </div>
