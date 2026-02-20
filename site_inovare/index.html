@@ -14,6 +14,8 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+
+
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
@@ -62,7 +64,7 @@
                     <i class="fas fa-home"></i> Home
                 </a>
 
-                <a href="#institucional"
+                <a href="#sobre"
                     class="hover:text-cyan-400 transition flex items-center gap-1 group text-gray-300">
                     Institucional <i
                         class="fas fa-caret-down text-gray-500 group-hover:text-cyan-400 text-xs mt-0.5"></i>
@@ -72,11 +74,11 @@
                     Serviços <i class="fas fa-caret-down text-gray-500 group-hover:text-cyan-400 text-xs mt-0.5"></i>
                 </a>
 
-                <a href="#produtos" class="hover:text-cyan-400 transition flex items-center gap-1 group text-gray-300">
+                <a href="#servicos" class="hover:text-cyan-400 transition flex items-center gap-1 group text-gray-300">
                     Produtos <i class="fas fa-caret-down text-gray-500 group-hover:text-cyan-400 text-xs mt-0.5"></i>
                 </a>
 
-                <a href="#conteudo" class="hover:text-cyan-400 transition flex items-center gap-1 group text-gray-300">
+                <a href="./EM CONSTRUÇÃO/construção.html" class="hover:text-cyan-400 transition flex items-center gap-1 group text-gray-300">
                     Conteúdo <i class="fas fa-caret-down text-gray-500 group-hover:text-cyan-400 text-xs mt-0.5"></i>
                 </a>
 
@@ -85,14 +87,50 @@
                 </a>
             </div>
 
-            <div class="hidden md:block">
-                <a href="#contato"
-                    class="text-slate-900 text-sm font-bold px-5 py-2.5 rounded-full transition shadow-lg" style="background:#03FEFD;hover:bg-opacity-80">
-                    ÁREA DO CLIENTE
+            <style>.btn-area-cliente {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    /* Animação de pulso constante mas discreta */
+    animation: pulse-glow 3s infinite;
+}
+
+.btn-area-cliente:hover {
+    transform: translateY(-3px) scale(1.05);
+    background-color: #00f2f1 !important; /* Brilho extra no hover */
+}
+
+@keyframes pulse-glow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(3, 254, 253, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(3, 254, 253, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(3, 254, 253, 0);
+    }
+}</style>
+
+
+<div class="hidden md:block">
+    <a href="./EM CONSTRUÇÃO/construção.html" 
+       class="btn-area-cliente text-slate-900 text-[12px] font-black px-5 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-cyan-400/50 uppercase tracking-wider" 
+       style="background:#03FEFD;">
+        ÁREA DO CLIENTE
+    </a>
+</div>
                 </a>
             </div>
         </div>
     </nav>
+
+
+
+
+
+
+    
 
     <section id="inicio" class="pt-32 pb-20 text-white relative" style="background:#182134;">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
@@ -107,7 +145,7 @@
                     eficiência.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#Vamos conversar?"
+                    <a href="#contato"
                         class="text-slate-900 font-bold px-8 py-4 rounded-xl text-center transition transform hover:scale-105 shadow-lg" style="background:#03FEFD;hover:bg-opacity-80">
                         FALE CONOSCO!
                         
@@ -125,24 +163,51 @@
         </div>
     </section>
 
-    <div class="shape-divider" aria-hidden="true">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" style="display:block;width:100%;height:100px;">
-            <g fill="#182134">
-                <path d="M0 0h1000v4H0z"></path>
-                <path d="M0 0h1000v80.8S550 100 500 100 0 80.8 0 80.8V0Z" opacity=".2"></path>
-                <path d="M0 0h1000v61.6S600 100 500 100 0 61.6 0 61.6V0Z" opacity=".3"></path>
-                <path d="M0 0h1000v42.4S650 100 500 100 0 42.4 0 42.4V0Z" opacity=".4"></path>
-                <path d="M0 0h1000v23.2S700 100 500 100 0 23.2 0 23.2V0Z" opacity=".5"></path>
-                <path d="M0 0v4s250 96 500 96 500-96 500-96V0H0Z"></path>
-            </g>
-        </svg>
-    </div>
 
-   <section id="servicos" class="py-24 bg-white relative">
+
+<!-- DIVIDER SHAPER -->  
+
+ <style>
+   
+    @keyframes respirarOnda {
+        0%, 100% { transform: scaleY(1); }
+        50% { transform: scaleY(1.2); } 
+    }
+
+    .cam-1 { animation: respirarOnda 4s ease-in-out infinite; transform-origin: top; }
+    .cam-2 { animation: respirarOnda 5s ease-in-out infinite; transform-origin: top; }
+    .cam-3 { animation: respirarOnda 6s ease-in-out infinite; transform-origin: top; }
+    .cam-4 { animation: respirarOnda 7s ease-in-out infinite; transform-origin: top; }
+</style>
+
+<div class="shape-divider" aria-hidden="true" style="position: relative; line-height: 0; background-color: #ffffff;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 120" preserveAspectRatio="none" style="display:block;width:100%;height:120px;">
+        <g fill="#182134">
+            <path d="M0 0h1000v4H0z"></path>
+            
+            <path class="cam-1" d="M0 0h1000v80.8S550 100 500 100 0 80.8 0 80.8V0Z" opacity=".2"></path>
+            <path class="cam-2" d="M0 0h1000v61.6S600 100 500 100 0 61.6 0 61.6V0Z" opacity=".3"></path>
+            <path class="cam-3" d="M0 0h1000v42.4S650 100 500 100 0 42.4 0 42.4V0Z" opacity=".4"></path>
+            <path class="cam-4" d="M0 0h1000v23.2S700 100 500 100 0 23.2 0 23.2V0Z" opacity=".5"></path>
+            
+            <path d="M0 0v4s250 96 500 96 500-96 500-96V0H0Z"></path>
+        </g>
+    </svg>
+</div>
+
+
+
+
+<!-- SEÇÃO PRODUTOS E SERVIÇOS -->  
+
+
+<section id="servicos" class="py-24 bg-white relative">
     <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-24">
-            <h2 class="text-3xl md:text-4xl font-black mb-4 mt-2" style="color: #1e293b" data-aos="fade-up">NOSSOS SERVIÇOS</h2>
+            <h2 class="text-3xl md:text-4xl font-black mb-4 mt-2" style="color: #1e293b" data-aos="fade-up">NOSSOS PRODUTOS E SERVIÇOS</h2>
         </div>
+
+        <!-- CONCILIAÇÃO DE CARTÕES -->  
 
         <div class="flex flex-wrap justify-center gap-8">
             <div class="w-full md:w-1/3 max-w-sm p-8 bg-gray-50 rounded-3xl card-hover border-2 border-cyan-500/20 group hover:bg-white hover:shadow-xl hover:border-cyan-500 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
@@ -153,13 +218,22 @@
                 <p class="text-black text-sm leading-relaxed">Pare de perder dinheiro com taxas inesperadas. Automatize a conferência de vendas, identifique divergências rapidamente e tenha total transparência sobre seus recebíveis.</p>
             </div>
 
-            <a href="./consultoria/index.html" class="w-full md:w-1/3 max-w-sm p-8 bg-gray-50 rounded-3xl card-hover border-2 border-cyan-500/20 group hover:bg-white hover:shadow-xl hover:border-cyan-500 transition-all duration-300 block" data-aos="fade-up" data-aos-delay="300">
+
+            <!-- CONSULTORIA FISCAL -->  
+
+            <a href="././index.html" class="w-full md:w-1/3 max-w-sm p-8 bg-gray-50 rounded-3xl card-hover border-2 border-cyan-500/20 group hover:bg-white hover:shadow-xl hover:border-cyan-500 transition-all duration-300 block" data-aos="fade-up" data-aos-delay="300">
+
                 <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm transition-colors duration-300 group-hover:bg-[#1e293b]">
                     <i class="fas fa-balance-scale text-3xl transition-colors text-[#1e293b] group-hover:text-[#03FEFD]"></i>
                 </div>
                 <h3 class="text-xl font-bold mb-4 text-slate-800">Consultoria Fiscal</h3>
                 <p class="text-black text-sm leading-relaxed">Simplificamos a burocracia fiscal brasileira com apoio de tecnologia e conhecimento especializado, ajudando sua empresa a operar com segurança e conformidade.</p>
+
+                
             </a>
+
+
+            <!-- INTEGRAÇÃO ENTRE SISTEMAS -->  
 
             <div class="w-full md:w-1/3 max-w-sm p-8 bg-gray-50 rounded-3xl card-hover border-2 border-cyan-500/20 group hover:bg-white hover:shadow-xl hover:border-cyan-500 transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
                 <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm transition-colors duration-300 group-hover:bg-[#1e293b]">
@@ -168,16 +242,93 @@
                 <h3 class="text-xl font-bold mb-4 text-slate-800">Integração entre Sistemas</h3>
                 <p class="text-black text-sm leading-relaxed">Soluções modernas e robustas para integrar seu ERP a softwares fiscais e conciliadores de cartão, garantindo qualidade, confiabilidade e simplicidade nos processos.</p>
             </div>
+
+            
+            <!-- AIRDOC -->  
+
+
+                <div class="w-full md:w-1/3 max-w-sm p-8 bg-gray-50 rounded-3xl card-hover border-2 border-cyan-500/20 group hover:bg-white hover:shadow-xl hover:border-cyan-500 transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm transition-colors duration-300 group-hover:bg-[#1e293b]">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" class="w-8 h-8 transition-colors text-[#1e293b] group-hover:text-[#03FEFD]">
+            <path fill="currentColor" d="M 25 11 C 20.029 11 16 15.029 16 20 L 16 52 C 16 56.971 20.029 61 25 61 L 47 61 C 51.971 61 56 56.971 56 52 L 56 31 L 42 31 C 38.686 31 36 28.314 36 25 L 36 11 L 25 11 z M 40 11.34375 L 40 25 C 40 26.105 40.896 27 42 27 L 55.65625 27 L 40 11.34375 z M 29 38 L 43 38 C 44.104 38 45 38.895 45 40 C 45 41.105 44.104 42 43 42 L 29 42 C 27.896 42 27 41.105 27 40 C 27 38.895 27.896 38 29 38 z M 29 47 L 43 47 C 44.104 47 45 47.895 45 49 C 45 50.105 44.104 51 43 51 L 29 51 C 27.896 51 27 50.105 27 49 C 27 47.895 27.896 47 29 47 z"></path>
+        </svg>
+
+    </div>
+    <h3 class="text-xl font-bold mb-4 text-slate-800">AirDoc</h3>
+    <p class="text-black text-sm leading-relaxed">Automatize a captura, validação e integração de documentos fiscais diretamente no seu ERP, garantindo mais agilidade, segurança e confiabilidade na entrada de notas.</p>
+</div>
         </div>
     </div>
 
-    </div>
-<div style="position: relative; line-height: 0; background-color: #ffffff;">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="display: block; width: 100%; height: auto;">
-            <path fill="#151F31" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,261.3C960,256,1056,224,1152,202.7C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
-    </div>
 
+
+<!-- DIVIDER SHAPER -->    
+
+
+ <style>
+    @keyframes waveFront {
+        0% { transform: translateX(0) translateY(0); }
+        50% { transform: translateX(-25%) translateY(5px); }
+        100% { transform: translateX(0) translateY(0); }
+    }
+
+    @keyframes waveBack {
+        0% { transform: translateX(-10%) translateY(5px); }
+        50% { transform: translateX(-30%) translateY(0); }
+        100% { transform: translateX(-10%) translateY(5px); }
+    }
+
+    .wave-container {
+        position: relative;
+        width: 100%;
+        height: 150px; 
+        background-color: #ffffff; 
+        overflow: hidden;
+        line-height: 0;
+    }
+
+    .wave-svg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 200%; 
+        height: 100%;
+    }
+
+    .wave-solid {
+        fill: #151F31;
+        z-index: 2;
+        animation: waveFront 10s ease-in-out infinite; 
+        margin-bottom: -1px; 
+    }
+
+    .wave-transparent {
+        fill: #151F31;
+        opacity: 0.4;
+        z-index: 1;
+        animation: waveBack 6s ease-in-out infinite reverse; 
+    }
+</style> 
+
+
+<div class="wave-container">
+    
+    <svg class="wave-svg wave-transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,261.3C960,256,1056,224,1152,202.7C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+
+    <svg class="wave-svg wave-solid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,261.3C960,256,1056,224,1152,202.7C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+
+</div>
+
+
+
+
+<!-- SEÇÃO QUEM SOMOS -->  
+    
     
    <section id="sobre" class="py-24 text-white relative overflow-hidden" style="background:#151F31;">
 
@@ -204,13 +355,13 @@
                     </h2>
 
                     <p class="text-slate-300 text-lg mb-6 leading-relaxed text-justify">
-                        A <b>Inovare Soluções e Sistemas</b> foi fundada em 2021, localizada em Ribeirão Preto, no interior de São Paulo e
-                        atua desenvolvendo e implantando sistemas. Oferecemos serviços de integração de sistemas, temos
-                        experiência em conectar o seu ERP com software fiscal e conciliador de cartão.
+                       A <b>Inovare Soluções e Sistemas</b> foi fundada em 2021 e está sediada na incubadora de empresas do <b><u><a href="https://maps.app.goo.gl/7TGDJtT8F58r1Umh7">Supera Parque</a></u></b>, em Ribeirão Preto/SP, um dos principais ambientes de inovação do país. Esse ecossistema impulsiona nossa capacidade de desenvolver soluções modernas, eficientes e alinhadas às reais necessidades do mercado.
+
+                        Somos especialistas na automação e integração de processos financeiros e documentos fiscais dentro do ERP. Nossas soluções reduzem retrabalho, minimizam erros, aumentam a produtividade e garantem mais controle e confiabilidade das informações.
                         <br><br>
-                        Utilizamos tecnologia moderna, robustas seguindo tendências de mercado, e nosso maior
-                        compromisso é com a qualidade e simplicidade. Venha nos conhecer, agende uma conversa conosco,
-                        nosso time vai atender e apresentar nosso portifólio de serviços.
+                        Combinamos tecnologia, visão de negócio e experiência prática para entregar resultados concretos: ganho operacional, escalabilidade e maior segurança nos processos.
+
+                        Se sua empresa busca eficiência, organização e crescimento sustentável, fale com a Inovare. Nosso time está pronto para entender seu cenário e apresentar a melhor solução para o seu negócio.
                     </p>
                 </div>
 
@@ -218,57 +369,108 @@
         </div>
     </section>
 
- <div style="position: relative; line-height: 0; background-color: #151F31; overflow: hidden;">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="display: block; width: 100%; height: auto; margin-bottom: -1px;">
-        <path fill="#ffffff" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,261.3C960,256,1056,224,1152,202.7C1248,181,1344,171,1392,165.3L1440,160L1440,320.5L1392,320.5C1344,320.5,1248,320.5,1152,320.5C1056,320.5,960,320.5,864,320.5C768,320.5,672,320.5,576,320.5C480,320.5,384,320.5,288,320.5C192,320.5,96,320.5,48,320.5L0,320.5Z"></path>
+
+
+<!-- DIVIDER SHAPER -->  
+
+
+<style>
+    @keyframes balancoOndaBranca {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(-25%); } 
+        100% { transform: translateX(0); } 
+    }
+    .onda-branca-animada {
+        width: 200%;
+        animation: balancoOndaBranca 6s ease-in-out infinite; 
+        transform-origin: bottom;
+    }
+</style>
+
+<div style="position: relative; line-height: 0; background-color: #151F31; overflow: hidden;">
+   <style>
+   
+    @keyframes moveWaveBigger {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(-25%); } /* Desliza a onda para a esquerda */
+        100% { transform: translateX(0); } /* Volta suavemente */
+    }
+
+    /* Classe para aplicar no SVG */
+    .wave-animated-bigger {
+        /* Largura dupla para ter espaço para se mover */
+        width: 200% !important; 
+        /* Altura fixa para manter a elegância e não ficar gigante ao esticar */
+        height: 160px !important;
+        /* Animação lenta (15s) e suave (ease-in-out) */
+        animation: moveWaveBigger 15s ease-in-out infinite;
+    }
+</style>
+
+<div style="position: relative; line-height: 0; background-color: #151F31; overflow: hidden;">
+    <svg class="wave-animated-bigger" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="display: block; margin-bottom: -1px;">
+        <path fill="#ffffff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,160C960,139,1056,149,1152,160C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
     </svg>
+</div>
 </div>
 
 
-   <section id="institucional" class="py-24 bg-white text-[#182134] overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+<!-- SEÇÃO PORQUE A INOVARE -->  
+
+<section id="institucional" class="py-24 bg-white text-[#182134] overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-stretch">
         
-        <div data-aos="fade-right">
-            <div class="relative">
+        <div data-aos="fade-right" class="order-2 md:order-1 flex">
+            <div class="relative w-full h-full">
                 <div class="absolute inset-0 bg-cyan-500 blur-2xl opacity-20 transform rotate-6 rounded-3xl"></div>
-                <img src="./img/imagem_3.jpg" alt="Homem pensando" class="relative rounded-3xl shadow-2xl border border-white/10 z-10">
+                <img src="./img/imagem_3.jpg" alt="Homem pensando" class="relative rounded-3xl shadow-2xl border border-white/10 z-10 w-full h-full object-cover">
             </div>
         </div>
 
-        <div data-aos="fade-left">
-            <h2 class="text-3xl font-black mb-6 mt-2 text-cyan-500">PORQUE A INOVARE?</h2>
+        <div data-aos="fade-left" class="order-1 md:order-2 flex flex-col justify-center">
+            <h2 class="text-3xl font-black mb-6 text-cyan-500 uppercase">Por que a Inovare?</h2>
 
             <div class="space-y-8">
-                
                 <div class="flex gap-4 group">
                     <div class="w-12 h-12 bg-[#182134]/10 rounded-xl flex items-center justify-center text-[#182134] text-xl group-hover:bg-cyan-500 group-hover:text-white transition duration-300 shrink-0">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
+                        <i class="fas fa-chart-line"></i> </div>
                     <div>
-                        <h4 class="text-xl font-bold mb-1 text-[#182134]">Experiência de Mercado</h4>
-                        <p class="text-black text-sm leading-relaxed">Sócios com vasta vivência em grandes consultorias e projetos de alta complexidade.</p>
+                        <h4 class="text-xl font-bold mb-1 text-[#182134]">Experiência aplicada ao seu negócio</h4>
+                        <p class="text-black text-sm leading-relaxed">Unimos vivência em grandes consultorias e projetos de alta complexidade à prática do dia a dia das empresas. Entendemos tanto a tecnologia quanto os processos fiscais e financeiros que impactam sua operação.</p>
                     </div>
                 </div>
 
                 <div class="flex gap-4 group">
                     <div class="w-12 h-12 bg-[#182134]/10 rounded-xl flex items-center justify-center text-[#182134] text-xl group-hover:bg-cyan-500 group-hover:text-white transition duration-300 shrink-0">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
+                        <i class="fas fa-robot"></i> </div>
                     <div>
-                        <h4 class="text-xl font-bold mb-1 text-[#182134]">Segurança e Qualidade</h4>
-                        <p class="text-black text-sm leading-relaxed">Código limpo, seguro e escalável. Seguimos as melhores práticas de LGPD e segurança da informação.</p>
+                        <h4 class="text-xl font-bold mb-1 text-[#182134]">Especialistas em automação e integração</h4>
+                        <p class="text-black text-sm leading-relaxed">Somos focados em integrar sistemas e automatizar rotinas dentro do ERP, eliminando retrabalho, reduzindo falhas manuais e garantindo consistência das informações.</p>
                     </div>
                 </div>
 
                 <div class="flex gap-4 group">
                     <div class="w-12 h-12 bg-[#182134]/10 rounded-xl flex items-center justify-center text-[#182134] text-xl group-hover:bg-cyan-500 group-hover:text-white transition duration-300 shrink-0">
-                        <i class="fas fa-sync-alt"></i>
-                    </div>
+                        <i class="fas fa-user-shield"></i> </div>
                     <div>
-                        <h4 class="text-xl font-bold mb-1 text-[#182134]">Especializada em integrações</h4>
-                        <p class="text-black text-sm leading-relaxed">Equipe com especialistas na área de integração entre sistemas.</p>
+                        <h4 class="text-xl font-bold mb-1 text-[#182134]">Segurança, conformidade e governança</h4>
+                        <p class="text-black text-sm leading-relaxed">Desenvolvemos soluções com código seguro, escalável e alinhado às melhores práticas de segurança da informação e LGPD, garantindo proteção de dados e confiabilidade operacional.</p>
                     </div>
                 </div>
+
+                <div class="flex gap-4 group">
+                    <div class="w-12 h-12 bg-[#182134]/10 rounded-xl flex items-center justify-center text-[#182134] text-xl group-hover:bg-cyan-500 group-hover:text-white transition duration-300 shrink-0">
+                        <i class="fas fa-bullseye"></i> </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-1 text-[#182134]">Foco em resultado</h4>
+                        <p class="text-black text-sm leading-relaxed">Nosso compromisso não é apenas entregar software, mas gerar eficiência operacional, redução de riscos e ganho real de produtividade para sua empresa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
             </div>
         </div>
@@ -292,7 +494,7 @@
 
 
 
-<!--MUDAR ESSA SEÇÃO DE CONTATO -->
+<!-- SEÇÃO DE CONTATO -->
 
 
  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
@@ -443,8 +645,9 @@
     }
 </style>
 
-<section class="s-contact">
+<section class="s-contact" id="contato">
     <div class="s-contact__container">
+    
         
         <div class="s-contact__form-side">
             <h2 class="s-contact__title">Vamos conversar?</h2>
@@ -471,137 +674,141 @@
 
     <!--BLOCO INFORMAÇÕES DE CONTATO-->
 
-    <style>
-    /* Container principal da lateral de info */
-    .s-contact__info-side { 
-        flex: 0.8; 
-        min-width: 320px; 
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; /* Centraliza horizontalmente todos os filhos */
-        justify-content: center; 
-        background: #ffffff; 
-        padding: 50px 30px;
-        text-align: center;
-        border: 3px solid #03FEFD;
-        border-radius: 60px 30px 60px 30px; 
-        box-shadow: 12px 12px 0px rgba(3, 254, 253, 0.1); 
-        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    }
+<style>
+/* Container principal da lateral de info */
+.s-contact__info-side { 
+    flex: 0.8; 
+    min-width: 320px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    background: #ffffff; 
+    padding: 50px 30px;
+    text-align: center;
+    border: 3px solid #03FEFD;
+    border-radius: 60px 30px 60px 30px; 
+    box-shadow: 12px 12px 0px rgba(3, 254, 253, 0.1); 
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-    /* Ajuste da Ilustração */
-    .s-contact__illustration {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px; /* Espaço entre imagem e texto */
-    }
+/* Ajuste da Ilustração */
+.s-contact__illustration {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
-    .s-contact__illustration img { 
-        width: 100%; 
-        max-width: 320px; /* Aumentado para ganhar mais destaque */
-        height: auto;
-        display: block;
-        filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
-        /* Garante que a imagem não distorça */
-        object-fit: contain;
-    }
+.s-contact__illustration img { 
+    width: 100%; 
+    max-width: 320px; 
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
+    object-fit: contain;
+}
 
-    /* Container de detalhes centralizado */
-    .s-contact__details { 
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Alinha o bloco de texto ao centro */
-        margin-bottom: 30px;
-    }
+/* Container de detalhes centralizado */
+.s-contact__details { 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 30px;
+}
 
-    .s-contact__details p { 
-        display: flex; 
-        align-items: center; 
-        justify-content: flex-start; /* Ícone e texto alinhados entre si */
-        gap: 15px; 
-        font-size: 15px;
-        margin: 12px 0;
-        font-weight: 600;
-        color: #1e293b;
-        width: 260px; /* Largura fixa para que os ícones fiquem um embaixo do outro */
-    }
+.s-contact__details p { 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+    gap: 15px; 
+    font-size: 15px;
+    margin: 12px 0;
+    font-weight: 700; /* Texto um pouco mais forte para compensar o ícone simples */
+    color: #1e293b;
+    width: 260px; 
+}
 
-    .s-contact__details i {
-        color: #03FEFD;
-        background: #1e293b;
-        min-width: 38px;
-        height: 38px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 12px;
-    }
+/* ÍCONES SIMPLES (SEM QUADRADO) */
+.s-contact__details i {
+    color: #1e293b; /* Cor que era do fundo, agora no ícone */
+    background: transparent; /* Remove o quadrado */
+    min-width: 25px; 
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px; /* Tamanho ajustado para ficar proporcional */
+}
 
-    .s-contact__actions {
-        display: flex;
-        gap: 20px;
-    }
+.s-contact__actions {
+    display: flex;
+    gap: 20px;
+}
 
-    /* Estilo dos Botões de Ação */
-    .contact-icon-btn {
-        width: 60px;
-        height: 60px;
-        background: #1e293b;
-        color: #03FEFD;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 24px;
-        text-decoration: none;
-        border: 2px solid #03FEFD;
-        border-radius: 20px;
-        transition: 0.3s ease;
-    }
+/* Botões de Ação (Mantidos com link e estilo original) */
+.contact-icon-btn {
+    width: 60px;
+    height: 60px;
+    background: #1e293b;
+    color: #03FEFD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-decoration: none;
+    border: 2px solid #03FEFD;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
 
-    .contact-icon-btn:hover {
-        background: #03FEFD;
-        color: #1e293b;
-        transform: scale(1.1) rotate(5deg);
-        box-shadow: 0 0 20px rgba(3, 254, 253, 0.4);
-    }
-    </style>
+.contact-icon-btn:hover {
+    background: #03FEFD;
+    color: #1e293b;
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 0 20px rgba(3, 254, 253, 0.4);
+}
+</style>
 
-    <div class="s-contact__info-side">
+<div class="s-contact__info-side">
     <div class="s-contact__illustration">
-        <img src="./img/imagem_enviar.png" alt="Suporte Inovare">
+        <img src="./img/imagem_enviar.png" alt="Ilustração de Contato">
     </div>
 
     <div class="s-contact__details">
-        <p><i class="fa-brands fa-whatsapp"></i> (16) 99427-3339</p>
-        <p><i class="fa-regular fa-envelope"></i> contato@inovarebr.com</p>
-        <p><i class="fa-solid fa-location-dot"></i> Dra. Nadir Aguiar 1805, Ribeirão Preto, SP</p>
+        <p><i class="fas fa-phone"></i> (16) 99427-3339</p>
+        <p><i class="fas fa-envelope"></i> contato@inovarebr.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> SUPERA Parque
+Av. Drª. Nadir Águiar, 1805 - Jardim Dr. Paulo Gomes Romeo, Ribeirão Preto - SP</p>
     </div>
 
     <div class="s-contact__actions">
-        <a href="https://wa.me/5516994273339" target="_blank" class="contact-icon-btn" title="Chamar no WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
+        <a href="https://wa.me/5516994273339" target="_blank" class="contact-icon-btn">
+            <i class="fab fa-whatsapp"></i>
         </a>
-        <a href="mailto:contato@inovarebr.com" class="contact-icon-btn" title="Enviar E-mail">
-        <i class="fa-regular fa-envelope"></i>
+        <a href="mailto:contato@inovarebr.com" class="contact-icon-btn">
+            <i class="far fa-envelope"></i>
+        </a>
+        <a href="https://maps.app.goo.gl/7TGDJtT8F58r1Umh7" target="_blank" class="contact-icon-btn">
+            <i class="fas fa-map-marker-alt"></i>
         </a>
     </div>
-    </div>
+</div>
 
     </div>
     </section>
 
 
-<!--FOOTER -->
 
+<!--DIVIDER SHAPER -->
 
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><path d="M0 0v4s250 96 500 96 500-96 500-96V0H0Z" fill="#182134"></path></svg>
 
 
 
-
+<!--FOOTER -->
 
 
 </div>
@@ -631,10 +838,10 @@
             <div class="s-footer__col">
                 <h4 class="footer-title">Links Rápidos</h4>
                 <ul class="footer-list">
-                    <li><a href="#institucional">Sobre Nós</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
                     <li><a href="#servicos">Serviços</a></li>
                     <li><a href="#produtos">Produtos</a></li>
-                    <li><a href="#conteudo">Blog</a></li>
+                    <li><a href="./EM CONSTRUÇÃO/construção.html">Blog</a></li>
                 </ul>
             </div>
 

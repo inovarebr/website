@@ -1,0 +1,12 @@
+/* Animação suave de vai e vem para a onda */
+@keyframes moverOnda {
+    0% { transform: translateX(0%); }
+    50% { transform: translateX(-25%); } /* Move a onda para a esquerda */
+    100% { transform: translateX(0%); } /* Volta para a posição original */
+}
+
+.onda-animada {
+    width: 200%; /* Deixa o SVG com o dobro do tamanho da tela */
+    animation: moverOnda 15s ease-in-out infinite; /* 15 segundos, transição suave, repetição infinita */
+    transform-origin: bottom;
+}
