@@ -1,0 +1,195 @@
+.consultoria-section {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #f7f9fc 0%, #ffffff 100%);
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.section-header {
+  max-width: 760px;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #0e1b2c;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+.section-header p {
+  color: #5b6472;
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.section-header .highlight {
+  margin-top: 18px;
+  font-weight: 600;
+  color: #16c2c5;
+}
+
+/* GRID CARDS */
+.consultoria-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 50px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  transition: 0.25s ease;
+  border: 1px solid #eef2f6;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1);
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #0e1b2c;
+  font-weight: 700;
+}
+
+.card p {
+  color: #5b6472;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ERP LIST */
+.erp-list {
+  margin: 10px 0 14px;
+  padding-left: 18px;
+}
+
+.erp-list li {
+  margin-bottom: 6px;
+  color: #0e1b2c;
+  font-weight: 600;
+}
+
+/* REFORMA BOX */
+.reforma-box {
+  background: linear-gradient(135deg, #0f1f3d, #132a52);
+  color: #fff;
+  padding: 28px 32px;
+  border-radius: 18px;
+  margin-bottom: 50px;
+  box-shadow: 0 15px 35px rgba(15, 31, 61, 0.25);
+}
+
+.reforma-box p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* OBRIGAÇÕES */
+.obrigacoes h3 {
+  font-size: 26px;
+  margin-bottom: 22px;
+  color: #0e1b2c;
+}
+
+.obrigacoes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 20px;
+  margin-bottom: 18px;
+}
+
+.ob-item {
+  background: #f4f7fb;
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 15px;
+  color: #334155;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  border: 1px solid #e6edf5;
+}
+
+.ob-item span {
+  min-width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: #16c2c5;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.note {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* CTA */
+.cta-consultoria {
+  margin-top: 40px;
+  padding: 36px;
+  background: #ffffff;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.07);
+  border: 1px solid #eef2f6;
+}
+
+.cta-consultoria p {
+  font-size: 18px;
+  color: #0e1b2c;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 14px 26px;
+  background: linear-gradient(135deg, #16c2c5, #1fd4d7);
+  color: #fff;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s ease;
+  box-shadow: 0 10px 25px rgba(22, 194, 197, 0.35);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(22, 194, 197, 0.45);
+}
+
+/* RESPONSIVO */
+@media (max-width: 1024px) {
+  .consultoria-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .obrigacoes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header h2 {
+    font-size: 32px;
+  }
+}
