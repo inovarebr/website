@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JZ0MWWRWHL"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JZ0MWWRWHL');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inovare Soluções e Sistemas</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            }.bg-dark-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+
+        .cyan-glow {
+            box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .icon-custom {
+            color: #1e293b !important;
+            transition: color 0.3s ease;
+        }
+
+        .group:hover .icon-custom {
+            color: #03FEFD !important;
+        }
+        
+    </style>
+
+    
+</head>
+
+<body class="bg-gray-50 text-slate-800 overflow-x-hidden">
+
+<style>
+    .btn-area-cliente {
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        animation: pulse-glow 3s infinite;
+    }
+    .btn-area-cliente:hover {
+        transform: translateY(-3px) scale(1.05);
+        background-color: #00f2f1 !important;
+    }
+    @keyframes pulse-glow {
+        0% { box-shadow: 0 0 0 0 rgba(3, 254, 253, 0.4); }
+        70% { box-shadow: 0 0 0 10px rgba(3, 254, 253, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(3, 254, 253, 0); }
+    }
+</style>
+
+<nav class="fixed w-full z-50 bg-[#0f172a]/95 backdrop-blur-md shadow-md border-b border-white/10 text-white">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+
+        <div class="flex items-center gap-3">
+            <a href="./index.html#inicio">
+                <img src="./img/logo_inovare_branco.png" alt="Logo Inovare" class="h-10 w-auto object-contain" id="header-logo">
+            </a>
+        </div>
+
+        <div class="hidden md:flex items-center space-x-6 text-sm font-medium h-full">
+
+            <a href="./index.html" class="hover:text-cyan-400 transition flex items-center gap-2 text-gray-300" id="nav-home">
+                <i class="fas fa-home"></i> Home
+            </a>
+
+            <div class="relative group h-full flex items-center">
+                <a href="#sobre" class="hover:text-cyan-400 transition flex items-center gap-1 text-gray-300 cursor-pointer">
+                    Institucional <i class="fas fa-caret-down text-gray-500 group-hover:text-cyan-400 text-xs mt-0.5 transition-transform group-hover:rotate-180"></i>
+                </a>
+
+                <div class="absolute top-full left-0 w-56 bg-[#0f172a] border border-white/10 rounded-b-xl shadow-2xl
+                            opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
+                            transition-all duration-300 overflow-hidden z-50">
+                    <div class="flex flex-col">
+                        <a href="./em_construcao/construcao.html" class="nav-link px-5 py-4 hover:bg-cyan-400/10 hover:text-cyan-400 border-b border-white/5 last:border-0 transition-colors">
+                            Sobre Nós
+                        </a>
+                        <a href="./em_construcao/construcao.html" class="nav-link px-5 py-4 hover:bg-cyan-400/10 hover:text-cyan-400 border-b border-white/5 last:border-0 transition-colors">
+                            Missão e Valores
+                        </a>
+                        <a href="./em_construcao/construcao.html" class="nav-link px-5 py-4 hover:bg-cyan-400/10 hover:text-cyan-400 last:border-0 transition-colors">
+                            Nosso Time
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative group h-full flex items-center">
+                <a href="#servicos" class="hover:text-cyan-400 transition flex items-center gap-1 text-gray-300 cursor-pointer">
+                    Serviços <i class="fas fa-caret-down text-gray-500 group-hover:text-cyan-400 text-xs mt-0.5 transition-transform group-hover:rotate-180"></i>
+                </a>
+
+                <div class="absolute top-[80px] left-0 w-56 bg-[#0f172a] border border-white/10 rounded-b-xl shadow-2xl
+                            opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
+                            transition-all duration-300 overflow-hidden">
+                    <div class="flex flex-col">
+                        <a href="./consultoria/index.html" class="nav-link px-5 py-4 hover:bg-cyan-400/10 hover:text-cyan-400 border-b border-white/5 last:border-0 transition-colors">
+                            Consultoria
+                        </a>
+                        <a href="./em_construcao/construcao.html" class="nav-link px-5 py-4 hover:bg-cyan-400/10 hover:text-cyan-400 border-b border-white/5 last:border-0 transition-colors">
+                            Automação financeira
+                        </a>
+                        <a href="./em_construcao/construcao.html" class="nav-link px-5 py-4 hover:bg-cyan-400/10 hover:text-cyan-400 last:border-0 transition-colors">
+                            Integração
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative group h-full flex items-center">
+                <a href="#servicos" class="hover:text-cyan-400 transition flex items-center gap-1 text-gray-300 cursor-pointer">
+                    Produtos <i class="fas fa-caret-down text-gray-500 group-hover:text-cyan-400 text-xs mt-0.5 transition-transform group-hover:rotate-180"></i>
+                </a>
+
+                <div class="absolute top-full left-0 w-56 bg-[#0f172a] border border-white/10 rounded-b-xl shadow-2xl
+                            opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
+                            transition-all duration-300 overflow-hidden z-50">
+                    <div class="flex flex-col">
+                        <a href="./em_construcao/construcao.html" class="nav-link px-5 py-4 hover:bg-cyan-400/10 hover:text-cyan-400 border-b border-white/5 last:border-0 transition-colors">
+                            Conciliação de Cartão
+                        </a>
+                        <a href="./em_construcao/construcao.html" class="nav-link px-5 py-4 hover:bg-cyan-400/10 hover:text-cyan-400 last:border-0 transition-colors">
+                            Plataforma de Integração
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative group h-full flex items-center">
+                <a href="./em_construcao/construcao.html" class="nav-link hover:text-cyan-400 transition flex items-center gap-1 text-gray-300 cursor-pointer">
+                    Conteúdo <i class="fas fa-caret-down text-gray-500 group-hover:text-cyan-400 text-xs mt-0.5 transition-transform group-hover:rotate-180"></i>
+                </a>
+
+                <div class="absolute top-full left-0 w-56 bg-[#0f172a] border border-white/10 rounded-b-xl shadow-2xl
+                            opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
+                            transition-all duration-300 overflow-hidden z-50">
+                    <div class="flex flex-col">
+                        <a href="./em_construcao/construcao.html" class="nav-link px-5 py-4 hover:bg-cyan-400/10 hover:text-cyan-400 border-b border-white/5 last:border-0 transition-colors">
+                            Blog
+                        </a>
+                        <a href="./em_construcao/construcao.html" class="nav-link px-5 py-4 hover:bg-cyan-400/10 hover:text-cyan-400 border-b border-white/5 last:border-0 transition-colors">
+                            Artigos
+                        </a>
+                        <a href="./em_construcao/construcao.html" class="nav-link px-5 py-4 hover:bg-cyan-400/10 hover:text-cyan-400 last:border-0 transition-colors">
+                            Central de Ajuda
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative group h-full flex items-center">
+                <a href="#contato" class="hover:text-cyan-400 transition flex items-center gap-1 text-gray-300 cursor-pointer">
+                    Contato <i class="fas fa-caret-down text-gray-500 group-hover:text-cyan-400 text-xs mt-0.5 transition-transform group-hover:rotate-180"></i>
+                </a>
+
+                <div class="absolute top-full left-0 w-56 bg-[#0f172a] border border-white/10 rounded-b-xl shadow-2xl
+                            opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
+                            transition-all duration-300 overflow-hidden z-50">
+                    <div class="flex flex-col">
+                        <a href="#contato" class="px-5 py-4 hover:bg-cyan-400/10 hover:text-cyan-400 border-b border-white/5 last:border-0 transition-colors">
+                            Formulário de Contato
+                        </a>
+                        <a href="https://wa.me/55" class="px-5 py-4 hover:bg-cyan-400/10 hover:text-cyan-400 border-b border-white/5 last:border-0 transition-colors">
+                            WhatsApp
+                        </a>
+                        <a href="mailto:contato@inovarebr.com" class="px-5 py-4 hover:bg-cyan-400/10 hover:text-cyan-400 last:border-0 transition-colors">
+                            Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden md:block">
+            <a href="./em_construcao/construcao.html"
+               class="nav-link btn-area-cliente text-slate-900 text-[12px] font-black px-5 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-cyan-400/50 uppercase tracking-wider"
+               style="background:#03FEFD;">
+                ÁREA DO CLIENTE
+            </a>
+        </div>
+
+    </div>
+</nav>
+
+
+
+
+
+
+
+    
+
+    <section id="inicio" class="pt-32 pb-20 text-white relative" style="background:#182134;">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <h1 class="text-4xl md:text-5xl font-black leading-tight mb-6">
+                    Sua empresa <span style="color:#03FEFD">integrada</span>, seu fiscal <span style="color:#03FEFD">sob
+                        controle</span>.
+                </h1>
+                <p class="text-lg text-slate-300 mb-8 leading-relaxed max-w-lg">
+                    Unimos <b>tecnologia moderna</b> e <B>consultoria especializada</B> para eliminar gargalos
+                    operacionais, reduzir riscos e garantir total conformidade tributária, com simplicidade e
+                    eficiência.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contato"
+                        class="text-slate-900 font-bold px-8 py-4 rounded-xl text-center transition transform hover:scale-105 shadow-lg" style="background:#03FEFD;hover:bg-opacity-80">
+                        FALE CONOSCO!
+                        
+                    </a>
+                </div>
+            </div>
+            <div class="relative" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="./img/imagem_1.jpg"
+                    alt="Homem planejando trabalho de crescimento empresarial"
+                    class="rounded-2xl shadow-2xl cyan-glow border border-white/10 relative z-10">
+
+                <div class="absolute -top-10 -right-10 w-32 h-32 bg-cyan-500/20 rounded-full blur-3xl animate-pulse">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- DIVIDER SHAPER -->  
+
+ <style>
+   
+    @keyframes respirarOnda {
+        0%, 100% { transform: scaleY(1); }
+        50% { transform: scaleY(1.2); } 
+    }
+
+    .cam-1 { animation: respirarOnda 4s ease-in-out infinite; transform-origin: top; }
+    .cam-2 { animation: respirarOnda 5s ease-in-out infinite; transform-origin: top; }
+    .cam-3 { animation: respirarOnda 6s ease-in-out infinite; transform-origin: top; }
+    .cam-4 { animation: respirarOnda 7s ease-in-out infinite; transform-origin: top; }
+</style>
+
+
+<div class="shape-divider" aria-hidden="true" style="position: relative; line-height: 0; background-color: #ffffff;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 120" preserveAspectRatio="none" style="display:block;width:100%;height:120px;">
+        <g fill="#182134">
+            <path d="M0 0h1000v4H0z"></path>
+            
+            <path class="cam-1" d="M0 0h1000v80.8S550 100 500 100 0 80.8 0 80.8V0Z" opacity=".2"></path>
+            <path class="cam-2" d="M0 0h1000v61.6S600 100 500 100 0 61.6 0 61.6V0Z" opacity=".3"></path>
+            <path class="cam-3" d="M0 0h1000v42.4S650 100 500 100 0 42.4 0 42.4V0Z" opacity=".4"></path>
+            <path class="cam-4" d="M0 0h1000v23.2S700 100 500 100 0 23.2 0 23.2V0Z" opacity=".5"></path>
+            
+            <path d="M0 0v4s250 96 500 96 500-96 500-96V0H0Z"></path>
+        </g>
+    </svg>
+</div>
+
+
+
+
+<!-- SEÇÃO PRODUTOS E SERVIÇOS -->  
+
+
+<section id="servicos" class="py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-24">
+            <h2 class="text-3xl md:text-4xl font-black mb-4 mt-2" style="color: #1e293b" data-aos="fade-up">NOSSOS PRODUTOS E SERVIÇOS</h2>
+        </div>
+
+        <!-- CONCILIAÇÃO DE CARTÕES -->  
+
+        <div class="flex flex-wrap justify-center gap-8">
+            <div class="w-full md:w-1/3 max-w-sm p-8 bg-gray-50 rounded-3xl card-hover border-2 border-cyan-500/20 group hover:bg-white hover:shadow-xl hover:border-cyan-500 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm transition-colors duration-300 group-hover:bg-[#1e293b]">
+                    <i class="fas fa-project-diagram text-3xl transition-colors text-[#1e293b] group-hover:text-[#03FEFD]"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-800">Conciliação de Cartões</h3>
+                <p class="text-black text-sm leading-relaxed">Pare de perder dinheiro com taxas inesperadas. Automatize a conferência de vendas, identifique divergências rapidamente e tenha total transparência sobre seus recebíveis.</p>
+            </div>
+
+
+            <!-- CONSULTORIA FISCAL -->  
+
+            <a href="./consultoria/index.html" class="w-full md:w-1/3 max-w-sm p-8 bg-gray-50 rounded-3xl card-hover border-2 border-cyan-500/20 group hover:bg-white hover:shadow-xl hover:border-cyan-500 transition-all duration-300 block" data-aos="fade-up" data-aos-delay="300">
+
+                <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm transition-colors duration-300 group-hover:bg-[#1e293b]">
+                    <i class="fas fa-balance-scale text-3xl transition-colors text-[#1e293b] group-hover:text-[#03FEFD]"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-800">Consultoria Fiscal</h3>
+                <p class="text-black text-sm leading-relaxed">Simplificamos a burocracia fiscal brasileira com apoio de tecnologia e conhecimento especializado, ajudando sua empresa a operar com segurança e conformidade.</p>
+
+                
+            </a>
+
+
+            <!-- INTEGRAÇÃO ENTRE SISTEMAS -->  
+
+            <div class="w-full md:w-1/3 max-w-sm p-8 bg-gray-50 rounded-3xl card-hover border-2 border-cyan-500/20 group hover:bg-white hover:shadow-xl hover:border-cyan-500 transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+                <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm transition-colors duration-300 group-hover:bg-[#1e293b]">
+                    <i class="fas fa-code text-3xl transition-colors text-[#1e293b] group-hover:text-[#03FEFD]"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-800">Integração entre Sistemas</h3>
+                <p class="text-black text-sm leading-relaxed">Soluções modernas e robustas para integrar seu ERP a softwares fiscais e conciliadores de cartão, garantindo qualidade, confiabilidade e simplicidade nos processos.</p>
+            </div>
+
+            
+            <!-- AIRDOC -->  
+
+
+                <div class="w-full md:w-1/3 max-w-sm p-8 bg-gray-50 rounded-3xl card-hover border-2 border-cyan-500/20 group hover:bg-white hover:shadow-xl hover:border-cyan-500 transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm transition-colors duration-300 group-hover:bg-[#1e293b]">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" class="w-8 h-8 transition-colors text-[#1e293b] group-hover:text-[#03FEFD]">
+            <path fill="currentColor" d="M 25 11 C 20.029 11 16 15.029 16 20 L 16 52 C 16 56.971 20.029 61 25 61 L 47 61 C 51.971 61 56 56.971 56 52 L 56 31 L 42 31 C 38.686 31 36 28.314 36 25 L 36 11 L 25 11 z M 40 11.34375 L 40 25 C 40 26.105 40.896 27 42 27 L 55.65625 27 L 40 11.34375 z M 29 38 L 43 38 C 44.104 38 45 38.895 45 40 C 45 41.105 44.104 42 43 42 L 29 42 C 27.896 42 27 41.105 27 40 C 27 38.895 27.896 38 29 38 z M 29 47 L 43 47 C 44.104 47 45 47.895 45 49 C 45 50.105 44.104 51 43 51 L 29 51 C 27.896 51 27 50.105 27 49 C 27 47.895 27.896 47 29 47 z"></path>
+        </svg>
+
+    </div>
+    <h3 class="text-xl font-bold mb-4 text-slate-800">AirDoc</h3>
+    <p class="text-black text-sm leading-relaxed">Automatize a captura, validação e integração de documentos fiscais diretamente no seu ERP, garantindo mais agilidade, segurança e confiabilidade na entrada de notas.</p>
+</div>
+        </div>
+    </div>
+
+
+
+<!-- DIVIDER SHAPER -->    
+
+
+ <style>
+    @keyframes waveFront {
+        0% { transform: translateX(0) translateY(0); }
+        50% { transform: translateX(-25%) translateY(5px); }
+        100% { transform: translateX(0) translateY(0); }
+    }
+
+    @keyframes waveBack {
+        0% { transform: translateX(-10%) translateY(5px); }
+        50% { transform: translateX(-30%) translateY(0); }
+        100% { transform: translateX(-10%) translateY(5px); }
+    }
+
+    .wave-container {
+        position: relative;
+        width: 100%;
+        height: 150px; 
+        background-color: #ffffff; 
+        overflow: hidden;
+        line-height: 0;
+    }
+
+    .wave-svg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 200%; 
+        height: 100%;
+    }
+
+    .wave-solid {
+        fill: #151F31;
+        z-index: 2;
+        animation: waveFront 10s ease-in-out infinite; 
+        margin-bottom: -1px; 
+    }
+
+    .wave-transparent {
+        fill: #151F31;
+        opacity: 0.4;
+        z-index: 1;
+        animation: waveBack 6s ease-in-out infinite reverse; 
+    }
+</style> 
+
+
+<div class="wave-container">
+    
+    <svg class="wave-svg wave-transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,261.3C960,256,1056,224,1152,202.7C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+
+    <svg class="wave-svg wave-solid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,261.3C960,256,1056,224,1152,202.7C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+
+</div>
+
+
+
+
+<!-- SEÇÃO QUEM SOMOS -->  
+    
+    
+   <section id="sobre" class="py-24 text-white relative overflow-hidden" style="background:#151F31;">
+
+        <div class="absolute top-0 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-600/10 rounded-full blur-[80px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+
+                <div data-aos="fade-right">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+
+                        <img src="./img/imagem_2.jpg"
+                            alt="Equipe Inovare"
+                            class="relative rounded-3xl shadow-2xl border border-white/10 w-full object-cover h-[500px]">
+                        
+                        </div>
+                </div>
+
+                <div data-aos="fade-left">
+                    <h2 class="text-3xl md:text-4xl font-black mb-6 leading-tight text-[#03FEFD]">
+                        QUEM SOMOS?
+                    </h2>
+
+                    <p class="text-slate-300 text-lg mb-6 leading-relaxed text-justify">
+                       A <b>Inovare Soluções e Sistemas</b> foi fundada em 2021 e está sediada na incubadora de empresas do <b><u><a href="https://www.superaparque.com.br/empresas">Supera Parque</a></u></b>, em Ribeirão Preto/SP, um dos principais ambientes de inovação do país. Esse ecossistema impulsiona nossa capacidade de desenvolver soluções modernas, eficientes e alinhadas às reais necessidades do mercado.
+
+                        Somos especialistas na automação e integração de processos financeiros e documentos fiscais dentro do ERP. Nossas soluções reduzem retrabalho, minimizam erros, aumentam a produtividade e garantem mais controle e confiabilidade das informações.
+                        <br><br>
+                        Combinamos tecnologia, visão de negócio e experiência prática para entregar resultados concretos: ganho operacional, escalabilidade e maior segurança nos processos.
+
+                        Se sua empresa busca eficiência, organização e crescimento sustentável, fale com a Inovare. Nosso time está pronto para entender seu cenário e apresentar a melhor solução para o seu negócio.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- DIVIDER SHAPER -->  
+
+
+<style>
+    @keyframes balancoOndaBranca {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(-25%); } 
+        100% { transform: translateX(0); } 
+    }
+    .onda-branca-animada {
+        width: 200%;
+        animation: balancoOndaBranca 6s ease-in-out infinite; 
+        transform-origin: bottom;
+    }
+</style>
+
+<div style="position: relative; line-height: 0; background-color: #151F31; overflow: hidden;">
+   <style>
+   
+    @keyframes moveWaveBigger {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(-25%); } /* Desliza a onda para a esquerda */
+        100% { transform: translateX(0); } /* Volta suavemente */
+    }
+
+    /* Classe para aplicar no SVG */
+    .wave-animated-bigger {
+        /* Largura dupla para ter espaço para se mover */
+        width: 200% !important; 
+        /* Altura fixa para manter a elegância e não ficar gigante ao esticar */
+        height: 160px !important;
+        /* Animação lenta (15s) e suave (ease-in-out) */
+        animation: moveWaveBigger 15s ease-in-out infinite;
+    }
+</style>
+
+<div style="position: relative; line-height: 0; background-color: #151F31; overflow: hidden;">
+    <svg class="wave-animated-bigger" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="display: block; margin-bottom: -1px;">
+        <path fill="#ffffff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,160C960,139,1056,149,1152,160C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+</div>
+</div>
+
+
+<!-- SEÇÃO PORQUE A INOVARE -->  
+
+<section id="institucional" class="py-24 bg-white text-[#182134] overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-stretch">
+        
+        <div data-aos="fade-right" class="order-2 md:order-1 flex">
+            <div class="relative w-full h-full">
+                <div class="absolute inset-0 bg-cyan-500 blur-2xl opacity-20 transform rotate-6 rounded-3xl"></div>
+                <img src="./img/imagem_3.jpg" alt="Homem pensando" class="relative rounded-3xl shadow-2xl border border-white/10 z-10 w-full h-full object-cover">
+            </div>
+        </div>
+
+        <div data-aos="fade-left" class="order-1 md:order-2 flex flex-col justify-center">
+            <h2 class="text-3xl font-black mb-6 text-cyan-500 uppercase">Por que a Inovare?</h2>
+
+            <div class="space-y-8">
+                <div class="flex gap-4 group">
+                    <div class="w-12 h-12 bg-[#182134]/10 rounded-xl flex items-center justify-center text-[#182134] text-xl group-hover:bg-cyan-500 group-hover:text-white transition duration-300 shrink-0">
+                        <i class="fas fa-chart-line"></i> </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-1 text-[#182134]">Experiência aplicada ao seu negócio</h4>
+                        <p class="text-black text-sm leading-relaxed">Unimos vivência em grandes consultorias e projetos de alta complexidade à prática do dia a dia das empresas. Entendemos tanto a tecnologia quanto os processos fiscais e financeiros que impactam sua operação.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 group">
+                    <div class="w-12 h-12 bg-[#182134]/10 rounded-xl flex items-center justify-center text-[#182134] text-xl group-hover:bg-cyan-500 group-hover:text-white transition duration-300 shrink-0">
+                        <i class="fas fa-robot"></i> </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-1 text-[#182134]">Especialistas em automação e integração</h4>
+                        <p class="text-black text-sm leading-relaxed">Somos focados em integrar sistemas e automatizar rotinas dentro do ERP, eliminando retrabalho, reduzindo falhas manuais e garantindo consistência das informações.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 group">
+                    <div class="w-12 h-12 bg-[#182134]/10 rounded-xl flex items-center justify-center text-[#182134] text-xl group-hover:bg-cyan-500 group-hover:text-white transition duration-300 shrink-0">
+                        <i class="fas fa-user-shield"></i> </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-1 text-[#182134]">Segurança, conformidade e governança</h4>
+                        <p class="text-black text-sm leading-relaxed">Desenvolvemos soluções com código seguro, escalável e alinhado às melhores práticas de segurança da informação e LGPD, garantindo proteção de dados e confiabilidade operacional.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 group">
+                    <div class="w-12 h-12 bg-[#182134]/10 rounded-xl flex items-center justify-center text-[#182134] text-xl group-hover:bg-cyan-500 group-hover:text-white transition duration-300 shrink-0">
+                        <i class="fas fa-bullseye"></i> </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-1 text-[#182134]">Foco em resultado</h4>
+                        <p class="text-black text-sm leading-relaxed">Nosso compromisso não é apenas entregar software, mas gerar eficiência operacional, redução de riscos e ganho real de produtividade para sua empresa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+</div>
+
+
+
+
+<div style="background-color: #ffffff; line-height: 0;">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" style="transform: scaleY(-1); width: 100%; height: auto;">
+    <path d="M0 0v100S0 4 500 4s500 96 500 96V0H0Z" fill="#182134"></path>
+  </svg>
+</div>
+
+
+
+
+
+<!-- SEÇÃO DE CONTATO -->
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+    /* Seção Principal */
+    .s-contact {
+        background-color: #182134;
+        padding: 80px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Container Flex */
+    .s-contact__container {
+        max-width: 1150px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    /* BLOCO 1: FORMULÁRIO */
+    .s-contact__form-side { 
+        flex: 1.2; 
+        min-width: 320px; 
+        background: #ffffff;
+        padding: 60px;
+        border: 3px solid #03FEFD;
+        border-radius: 60px 30px 60px 30px; 
+        box-shadow: 15px 15px 0px rgba(3, 254, 253, 0.1);
+        transition: all 0.6s ease-in-out;
+    }
+
+    .s-contact__form-side:hover {
+        border-radius: 30px 60px 30px 60px;
+        box-shadow: -15px 15px 0px rgba(24, 33, 52, 0.2);
+    }
+
+    /* Título com efeito Hover de cor */
+    .s-contact__title { 
+        color: #03FEFD; 
+        font-size: 32px; 
+        font-weight: 800; 
+        margin-bottom: 10px; 
+        text-transform: uppercase; 
+        transition: color 0.4s ease; /* Transição suave */
+        cursor: default;
+    }
+
+    /* Mudança para Azul Marinho no Hover solicitado */
+    .s-contact__title:hover {
+        color: #1e293b;
+    }
+
+    .s-contact__description { color: #64748b; font-size: 14px; margin-bottom: 35px; line-height: 1.5; }
+
+    /* SUBTÍTULOS: Nome, Email, Mensagem */
+    .s-contact__group { margin-bottom: 22px; text-align: left; }
+    .s-contact__group label { 
+        display: block; 
+        font-size: 15px; 
+        color: #1e293b; 
+        font-weight: 700; 
+        margin-bottom: 10px; 
+    }
+    
+    /* CAIXINHAS DE RESPOSTA */
+    .s-contact__group input, .s-contact__group textarea { 
+        width: 100%; 
+        background: #f8fafc; 
+        border: 2px solid #cbd5e1; 
+        border-radius: 12px; 
+        padding: 16px; 
+        outline: none; 
+        transition: 0.3s; 
+        font-family: 'Montserrat', sans-serif; 
+        box-sizing: border-box;
+        color: #1e293b;
+        font-size: 14px;
+    }
+
+    .s-contact__group input:focus, .s-contact__group textarea:focus { 
+        border-color: #03FEFD; 
+        background: #fff;
+        box-shadow: 0 0 0 4px rgba(3, 254, 253, 0.1); 
+    }
+
+    .s-contact__group textarea { height: 120px; resize: none; }
+    
+    .s-contact__btn { 
+        background: #1e293b; color: #03FEFD; border: 2px solid #03FEFD; padding: 18px 40px; 
+        border-radius: 50px; font-weight: 800; text-transform: uppercase; cursor: pointer; transition: 0.3s; width: 100%;
+        margin-top: 10px;
+    }
+    .s-contact__btn:hover { background: #03FEFD; color: #1e293b; transform: translateY(-3px); }
+
+    /* BLOCO 2: INFORMAÇÕES */
+    .s-contact__info-side { 
+        flex: 0.8; 
+        min-width: 320px; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        background: #ffffff; 
+        padding: 50px 30px;
+        text-align: center;
+        border: 3px solid #03FEFD;
+        border-radius: 60px 30px 60px 30px; 
+        box-shadow: 12px 12px 0px rgba(3, 254, 253, 0.1); 
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .s-contact__info-side:hover {
+        border-radius: 30px 60px 30px 60px;
+        box-shadow: -12px 12px 0px rgba(3, 254, 253, 0.2);
+        transform: translateY(-8px);
+    }
+
+    .s-contact__illustration img { 
+        width: 100%; 
+        max-width: 260px; /* Aumentado para centralizar bem */
+        height: auto; 
+        margin-bottom: 30px; 
+        filter: drop-shadow(0 10px 15px rgba(3, 254, 253, 0.15)); 
+    }
+
+    .s-contact__details { width: fit-content; text-align: left; margin-bottom: 30px; color: #1e293b; }
+    .s-contact__details p { display: flex; align-items: center; gap: 15px; font-size: 14px; margin: 15px 0; font-weight: 600; }
+    .s-contact__details i { color: #03FEFD; background: #1e293b; width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; border-radius: 12px; }
+
+    .s-contact__actions { display: flex; gap: 15px; }
+    .contact-icon-btn { 
+        width: 55px; height: 55px; background: #1e293b; color: #03FEFD; display: flex; align-items: center; 
+        justify-content: center; font-size: 22px; text-decoration: none; border: 2px solid #03FEFD; border-radius: 18px; transition: 0.3s; 
+    }
+    .contact-icon-btn:hover { background: #03FEFD; color: #1e293b; transform: scale(1.1) rotate(5deg); }
+
+    @media (max-width: 768px) {
+        .s-contact__container { flex-direction: column; }
+        .s-contact__form-side, .s-contact__info-side { padding: 40px 25px; border-radius: 30px; }
+    }
+</style>
+
+<section class="s-contact" id="contato">
+    <div class="s-contact__container">
+    
+        
+        <div class="s-contact__form-side">
+            <h2 class="s-contact__title">Vamos conversar?</h2>
+            <p class="s-contact__description">Preencha os dados e um especialista técnico entrará em contato.</p>
+            
+            
+            <form class="s-contact__form" action="https://formsubmit.co/contato@inovarebr.com" method="POST">
+                <input type="hidden" name="_subject" value="Mensagem a partir de site Inovare">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grit7klewrmj/b/inovare_website/o/obrigado.html">
+                <input type="hidden" name="_autoresponse" value="Obrigado pelo seu contato! Em breve retornaremos.">           
+
+                <div class="s-contact__group">
+                    <label>Nome</label>
+                    <input type="text" name="name" placeholder="Seu nome completo" required>
+                </div>
+                <div class="s-contact__group">
+                    <label>E-mail</label>
+                    <input type="email" name="email" placeholder="contato@empresa.com" required>
+                </div>
+                <div class="s-contact__group">
+                    <label>Mensagem</label>
+                    <textarea name="message" placeholder="Como podemos ajudar o seu negócio hoje?" required></textarea>
+                </div>
+                <button type="submit" class="s-contact__btn">Enviar Mensagem</button>
+            </form>
+        </div>
+
+
+    <!--BLOCO INFORMAÇÕES DE CONTATO-->
+
+<style>
+/* Container principal da lateral de info */
+.s-contact__info-side { 
+    flex: 0.8; 
+    min-width: 320px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    background: #ffffff; 
+    padding: 50px 30px;
+    text-align: center;
+    border: 3px solid #03FEFD;
+    border-radius: 60px 30px 60px 30px; 
+    box-shadow: 12px 12px 0px rgba(3, 254, 253, 0.1); 
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Ajuste da Ilustração */
+.s-contact__illustration {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.s-contact__illustration img { 
+    width: 100%; 
+    max-width: 320px; 
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
+    object-fit: contain;
+}
+
+/* Container de detalhes centralizado */
+.s-contact__details { 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 30px;
+}
+
+.s-contact__details p { 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+    gap: 15px; 
+    font-size: 15px;
+    margin: 12px 0;
+    font-weight: 700; /* Texto um pouco mais forte para compensar o ícone simples */
+    color: #1e293b;
+    width: 260px; 
+}
+
+/* ÍCONES SIMPLES (SEM QUADRADO) */
+.s-contact__details i {
+    color: #1e293b; /* Cor que era do fundo, agora no ícone */
+    background: transparent; /* Remove o quadrado */
+    min-width: 25px; 
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px; /* Tamanho ajustado para ficar proporcional */
+}
+
+.s-contact__actions {
+    display: flex;
+    gap: 20px;
+}
+
+/* Botões de Ação (Mantidos com link e estilo original) */
+.contact-icon-btn {
+    width: 60px;
+    height: 60px;
+    background: #1e293b;
+    color: #03FEFD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-decoration: none;
+    border: 2px solid #03FEFD;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.contact-icon-btn:hover {
+    background: #03FEFD;
+    color: #1e293b;
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 0 20px rgba(3, 254, 253, 0.4);
+}
+
+
+</style>
+
+<div class="s-contact__info-side">
+    <div class="s-contact__illustration">
+        <img src="./img/imagem_enviar.png" alt="Ilustração de Contato">
+    </div>
+
+    <div class="s-contact__details">
+   <div class="s-contact__details">
+    <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div class="contact-text">
+            <p>
+                Av. Dra. Nadir Aguiar, 1805<br>
+                Jd. Dr. Paulo Gomes Romeo<br>
+                Ribeirão Preto/SP
+            </p>
+        </div>
+    </div>
+
+    <div class="contact-item">
+        <i class="fas fa-phone-alt"></i>
+        <div class="contact-text">
+            <p>(16) 99427-3339</p>
+        </div>
+    </div>
+
+    <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <div class="contact-text">
+            <p>contato@inovarebr.com</p>
+        </div>
+    </div>
+</div>
+    </div>
+
+    <div class="s-contact__actions">
+        <a href="https://wa.me/5516994273339" target="_blank" class="contact-icon-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="mailto:contato@inovarebr.com" class="contact-icon-btn">
+            <i class="far fa-envelope"></i>
+        </a>
+        <a href="https://maps.app.goo.gl/7TGDJtT8F58r1Umh7" target="_blank" class="contact-icon-btn">
+            <i class="fas fa-map-marker-alt"></i>
+        </a>
+    </div>
+</div>
+
+    </div>
+    </section>
+
+
+
+<!--DIVIDER SHAPER -->
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><path d="M0 0v4s250 96 500 96 500-96 500-96V0H0Z" fill="#182134"></path></svg>
+
+
+
+<!--FOOTER -->
+
+
+</div>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<style>
+    /* VARIÁVEIS DE COR */
+    :root {
+        --primary: #03FEFD;
+        --navy: #0f172a;
+        --text: #64748b;
+        --bg-light: #f8fafc;
+    }
+
+    .s-footer {
+        background: #ffffff;
+        padding: 70px 0 30px;
+        border-top: 1px solid #e2e8f0;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .s-footer__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 25px;
+    }
+
+    .s-footer__main {
+        display: grid;
+        grid-template-columns: 1.4fr 0.8fr 0.8fr 1fr;
+        gap: 40px;
+        margin-bottom: 50px;
+    }
+
+    .s-footer__logo {
+        display: grid;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .s-footer__partners {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        align-items: center;
+        justify-items: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .partner-logo {
+        height: 42px;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .partner-logo:last-child {
+        margin-right: auto;
+    }
+
+    .logo-box {
+        background: var(--primary);
+        color: var(--navy);
+        width: 34px;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        font-weight: 800;
+    }
+
+    .logo-text {
+        font-size: 22px;
+        font-weight: 800;
+        color: var(--navy);
+        letter-spacing: -0.5px;
+    }
+
+    .logo-text .highlight { color: var(--primary); }
+
+    .s-footer__description {
+        font-size: 14px;
+        color: var(--text);
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .s-footer__social { display: flex; gap: 12px; }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        background: var(--bg-light);
+        color: var(--navy);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border: 1px solid #f1f5f9;
+    }
+
+    .social-icon:hover {
+        background: var(--primary);
+        color: var(--navy);
+        transform: translateY(-5px) rotate(8deg);
+        box-shadow: 0 8px 15px rgba(3, 254, 253, 0.4);
+    }
+
+    .footer-title {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--navy);
+        margin-bottom: 25px;
+    }
+
+    .footer-list { list-style: none; padding: 0; }
+    .footer-list li { margin-bottom: 12px; }
+    .footer-list a {
+        text-decoration: none;
+        color: var(--text);
+        font-size: 14px;
+        font-weight: 400;
+        transition: 0.3s;
+    }
+    .footer-list a:hover { color: var(--primary); padding-left: 5px; }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+        color: var(--text);
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+
+    .contact-item i {
+        color: var(--navy);
+        font-size: 16px;
+    }
+
+    .s-footer__bottom {
+        border-top: 1px solid #f1f5f9;
+        padding-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: #94a3b8;
+    }
+
+    @media (max-width: 992px) {
+        .s-footer__main { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+        .s-footer__main { grid-template-columns: 1fr; }
+        .s-footer__bottom { flex-direction: column; text-align: center; gap: 10px; }
+    }
+</style>
+
+<footer class="s-footer">
+    <div class="s-footer__container">
+        <div class="s-footer__main">
+
+            <div class="s-footer__col">
+                <div class="s-footer__logo">
+                    <img src="./img/logo_inovare_2.png" alt="Inovare Soluções e Sistemas" width="250" id="footer-logo">
+                </div>
+
+                <div class="s-footer__partners">
+                    <img src="./img/DNA_USP.png" alt="DNA USP" class="partner-logo" id="partner-dna">
+                    <img src="./img/SUPERA_logo.png" alt="Supera" class="partner-logo" id="partner-supera">
+                </div>
+
+                <p class="s-footer__description">
+                    Transformando complexidade fiscal em eficiência digital através de tecnologia e inteligência.
+                </p>
+                <div class="s-footer__social">
+                    <a href="https://www.youtube.com/@inovarebr" target="_blank" class="social-icon" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/company/inovarebr/" target="_blank" class="social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/5516994273339" target="_blank" class="social-icon" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="s-footer__col">
+                <h4 class="footer-title">Links Rápidos</h4>
+                <ul class="footer-list">
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#servicos">Produtos</a></li>
+                    <li><a href="./em_construcao/construcao.html" class="footer-link">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="s-footer__col">
+                <h4 class="footer-title">Legal</h4>
+                <ul class="footer-list">
+                    <li>
+                        <a href="./docs/Politica de Seguranca da Informacao e Privacidade de Dados.pdf" class="footer-link" download>
+                            Política de Privacidade
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./docs/Definição Encarregado de Dados.pdf" class="footer-link" download>
+                            Definição Encarregado de Dados
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="s-footer__col">
+                <h4 class="footer-title">Fale Conosco</h4>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>(16) 99427-3339</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>contato@inovarebr.com</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="s-footer__bottom">
+            <p>© 2026 Inovare Soluções e Sistemas. Todos os direitos reservados.</p>
+            <p class="location">Ribeirão Preto - SP</p>
+        </div>
+    </div>
+</footer>
+
+
+
+<div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+
+
+</html>
