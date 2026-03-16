@@ -1,0 +1,226 @@
+<style>
+    /* VARIÁVEIS DE COR */
+    :root {
+        --primary: #03FEFD;
+        --navy: #0f172a;
+        --text: #64748b;
+        --bg-light: #f8fafc;
+    }
+
+    .s-footer {
+        background: #ffffff;
+        padding: 70px 0 30px;
+        border-top: 1px solid #e2e8f0;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .s-footer__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 25px;
+    }
+
+    .s-footer__main {
+        display: grid;
+        grid-template-columns: 1.4fr 0.8fr 0.8fr 1fr;
+        gap: 40px;
+        margin-bottom: 50px;
+    }
+
+    .s-footer__logo {
+        display: grid;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .s-footer__partners {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        align-items: center;
+        justify-items: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .partner-logo {
+        height: 42px;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .partner-logo:last-child {
+        margin-right: auto;
+    }
+
+    .logo-box {
+        background: var(--primary);
+        color: var(--navy);
+        width: 34px;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        font-weight: 800;
+    }
+
+    .logo-text {
+        font-size: 22px;
+        font-weight: 800;
+        color: var(--navy);
+        letter-spacing: -0.5px;
+    }
+
+    .logo-text .highlight { color: var(--primary); }
+
+    .s-footer__description {
+        font-size: 14px;
+        color: var(--text);
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .s-footer__social { display: flex; gap: 12px; }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        background: var(--bg-light);
+        color: var(--navy);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border: 1px solid #f1f5f9;
+    }
+
+    .social-icon:hover {
+        background: var(--primary);
+        color: var(--navy);
+        transform: translateY(-5px) rotate(8deg);
+        box-shadow: 0 8px 15px rgba(3, 254, 253, 0.4);
+    }
+
+    .footer-title {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--navy);
+        margin-bottom: 25px;
+    }
+
+    .footer-list { list-style: none; padding: 0; }
+    .footer-list li { margin-bottom: 12px; }
+    .footer-list a {
+        text-decoration: none;
+        color: var(--text);
+        font-size: 14px;
+        font-weight: 400;
+        transition: 0.3s;
+    }
+    .footer-list a:hover { color: var(--primary); padding-left: 5px; }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+        color: var(--text);
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+
+    .contact-item i {
+        color: var(--navy);
+        font-size: 16px;
+    }
+
+    .s-footer__bottom {
+        border-top: 1px solid #f1f5f9;
+        padding-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: #94a3b8;
+    }
+
+    @media (max-width: 992px) {
+        .s-footer__main { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+        .s-footer__main { grid-template-columns: 1fr; }
+        .s-footer__bottom { flex-direction: column; text-align: center; gap: 10px; }
+    }
+</style>
+
+<footer class="s-footer">
+    <div class="s-footer__container">
+        <div class="s-footer__main">
+
+            <div class="s-footer__col">
+                <div class="s-footer__logo">
+                    <img src="img/logo_inovare_2.png" alt="Inovare Soluções e Sistemas" width="250" id="footer-logo">
+                </div>
+
+                <div class="s-footer__partners">
+                    <img src="img/DNA_USP.png" alt="DNA USP" class="partner-logo" id="partner-dna">
+                    <img src="img/SUPERA_logo.png" alt="Supera" class="partner-logo" id="partner-supera">
+                </div>
+
+                <p class="s-footer__description">
+                    Transformando complexidade fiscal em eficiência digital através de tecnologia e inteligência.
+                </p>
+                <div class="s-footer__social">
+                    <a href="https://www.youtube.com/@inovarebr" target="_blank" class="social-icon" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/company/inovarebr/" target="_blank" class="social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/5516994273339" target="_blank" class="social-icon" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="s-footer__col">
+                <h4 class="footer-title">Links Rápidos</h4>
+                <ul class="footer-list">
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#servicos">Produtos</a></li>
+                    <li><a href="em_construcao/construcao.html" class="footer-link">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="s-footer__col">
+                <h4 class="footer-title">Legal</h4>
+                <ul class="footer-list">
+                    <li>
+                        <a href="docs/Politica de Seguranca da Informacao e Privacidade de Dados.pdf" class="footer-link" download>
+                            Política de Privacidade
+                        </a>
+                    </li>
+                    <li>
+                        <a href="docs/Definição Encarregado de Dados.pdf" class="footer-link" download>
+                            Definição Encarregado de Dados
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="s-footer__col">
+                <h4 class="footer-title">Fale Conosco</h4>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>(16) 99427-3339</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>contato@inovarebr.com</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="s-footer__bottom">
+            <p>© 2026 Inovare Soluções e Sistemas. Todos os direitos reservados.</p>
+            <p class="location">Ribeirão Preto - SP</p>
+        </div>
+    </div>
+</footer>
