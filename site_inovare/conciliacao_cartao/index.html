@@ -103,7 +103,8 @@
 
 <!-- CONSULTORIA TÍTULO -->
 
-<style>.banner {
+<style>
+.banner {
   display: flex;
   align-items: center;   
   justify-content: center; 
@@ -123,27 +124,43 @@
     transform: translateY(0);
   }
 }
+
+/* Estilo adicional para o botão saiba mais */
+.btn-saiba-mais {
+  transition: all 0.3s ease;
+  border: 1px solid #00FFFF;
+}
+
+.btn-saiba-mais:hover {
+  background-color: #00FFFF;
+  color: #17152C;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
 </style>
 
-
-
-<section id="consultoria-essencia" class="banner py-32 bg-[#17152C] overflow-hidden flex items-center justify-center">
+<section id="consultoria-essencia" class="banner py-32 bg-[#17152C] overflow-hidden flex items-center justify-center relative">
     
     <div class="absolute inset-0 z-0">
         <img src="../img/conciliacao_1.png" alt="Fundo Consultoria Inovare" class="w-full h-full object-cover object-center">
         
         <div class="absolute inset-0 bg-gradient-to-r from-[#17152C]/90 via-[#00FFFF]/20 to-[#17152C]/90 mix-blend-multiply"></div>
-        <div class="absolute inset-0 bg-[#17152C]/60"></div> </div>
+        <div class="absolute inset-0 bg-[#17152C]/60"></div> 
+    </div>
 
     <div class="max-w-7xl mx-auto px-6 relative z-10 text-center" data-aos="fade-down">
-        <h2 class="text-2xl md:text-5xl font-bold text-white uppercase tracking-tight" data-aos="zoom-in" data-aos-delay="200">
-    Sobre<br>
-    <span class="text-[#00FFFF]">Conciliação de Cartões</span>
+        <h2 class="text-2xl md:text-5xl font-bold text-white uppercase tracking-tight mb-8" data-aos="zoom-in" data-aos-delay="200">
+            Sobre<br>
+            <span class="text-[#00FFFF]">Conciliação de Cartões</span>
         </h2>
+
+        <div data-aos="fade-up" data-aos-delay="400">
+            <a href="#proxima-secao" class="btn-saiba-mais inline-block px-6 py-2 text-sm font-bold text-[#00FFFF] uppercase tracking-widest rounded-full">
+                saiba mais
+            </a>
+        </div>
     </div>
 
 </section>
-
 
 
 
@@ -197,14 +214,13 @@
         <div data-aos="fade-right" class="w-full">
             <div class="space-y-6 text-lg md:text-xl leading-relaxed text-slate-700 max-w-none text-left">
                 <p>
-                    <b>Mantenha suas finanças em dia com nossa solução de conciliação de cartões.</b>
-                    Facilitamos o controle das suas vendas, assegurando que você tenha sempre uma visão clara e precisa do seu fluxo de caixa e garantindo que os taxas e prazos acordados sejam cumpridos.
+                    <b>Mantenha suas finanças em dia com nossa solução de conciliação de cartões.</b> Facilitamos o controle das suas vendas, garantindo uma visão clara do seu fluxo de caixa e o cumprimento correto de taxas e prazos.
                 </p>
                 <p>
-                    A conciliação de cartões é um processo de checagem dos dados financeiros apresentados pela operadora via cartão estão sendo contabilizadas de forma correta. Também se certifica de que descontos e taxas serão aplicados devidamente. O processo engloba a comparação de transações dos extratos bancários com a adquirente do cartão, garantindo que os valores lançados se relacionem e não haja divergências. Realizamos essa ação de forma periódica, garantindo que os valores sejam apurados adequadamente e que a empresa esteja sempre em conformidade.
+                    A conciliação de cartões é o processo de verificação dos dados financeiros das operadoras, assegurando que valores, descontos e taxas estejam corretos. Comparamos as transações dos extratos bancários com as informações das adquirentes, evitando divergências e garantindo conformidade.
                 </p>
                 <p class="font-bold text-[#182134]">
-                    Simplificando, é a conferência de que o valor das vendas realizadas corresponde ao valor repassado pela adquirente.
+                    Na prática, conferimos se o valor das vendas realizadas corresponde ao valor repassado, trazendo mais segurança e precisão para a gestão financeira da sua empresa.
                 </p>
             </div>
         </div>
@@ -261,16 +277,13 @@
 
             <div class="space-y-6 text-lg md:text-xl leading-relaxed text-slate-300 max-w-none text-left">
                 <p>
-                    A <b>conciliação</b> atua como uma espécie de controle de prazos e tarifas cobradas pelos agentes envolvidos na rede de pagamentos. Esses processos são fundamentais para a gestão financeira de uma organização. Quando uma empresa vende com cartão, vários agentes então envolvidos na transação, já que bandeiras de cartões como visa, elo e mastercard são formadas por um consórcio de instituições financeiras e definem prazos, regras e restrições para utilização.
+                    A conciliação de cartões é o <b>processo</b> que controla prazos, taxas e tarifas das transações. Envolve bandeiras e adquirentes, que definem regras e custos, enquanto um sistema registra e acompanha os valores, que são repassados com descontos.
                 </p>
                 
                 <p>
-                    A adquirente decide as <b>taxas, juros e compensações</b>, e a empresa faz a venda. Todo o processo de conciliação é formado por um sistema robusto projetado para registrar e transmitir informações sobre as transações. O prazo para que as compras com o cartão de crédito sejam repassadas aos lojistas é de <b>30 dias</b> após a transação. O preço de compra é deduzido de despesas como taxas de transporte e aluguel de máquinas.
+                    Esse processo garante que as transações estejam corretas, evitando divergências e trazendo mais controle, precisão e eficiência para a gestão financeira da empresa. A conciliação de cartão de crédito funciona como uma nova forma de controlar prazos e custos cobrados pelos agentes envolvidos na rede de pagamentos.
                 </p>
-
-                <p>
-                    A conciliação de cartão de crédito funciona como uma nova forma de <B>controlar prazos e custos</B> cobrados pelos agentes envolvidos na rede de pagamentos. Logo, o processo é parte fundamental da gestão financeira de uma organização. A conciliação de cartões é essencial para garantir que todas as transações realizadas por meio de cartões de créditos e débito sejam corretamente registradas e que as tarifas e prazos aplicados pelos diferentes agentes envolvidos no processo de pagamento sejam controlados, sendo um processo crucial para a gestão financeira de uma empresa.
-                </p>
+                
                 
             </div>
 
