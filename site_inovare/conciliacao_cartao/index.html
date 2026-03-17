@@ -253,7 +253,7 @@
 <!--CONCILIACAO EXPLICACAO-->
     
 
-    <section id="especialidades" class="relative pt-20 pb-20 bg-[#17152C] text-white overflow-visible">
+    <section id="especialidades" class="relative pt-20 pb-40 bg-[#17152C] text-white overflow-visible">
     
     <div class="max-w-5xl mx-auto px-6 relative z-10"> 
         <div data-aos="fade-right" class="w-full">
@@ -280,29 +280,32 @@
         </div>
     </div>
 
-    <style>
-        .custom-shape-divider-bottom-espec-curta {
+ <style>
+        .custom-shape-divider-bottom-sobre {
             position: absolute;
-            bottom: -1px;
+            bottom: -1px; /* Cola no limite inferior */
             left: 0;
             width: 100%;
             overflow: hidden;
             line-height: 0;
-            transform: rotate(180deg);
+            transform: rotate(180deg); 
             z-index: 20;
         }
-        .custom-shape-divider-bottom-espec-curta svg {
+
+        .custom-shape-divider-bottom-sobre svg {
             position: relative;
             display: block;
             width: calc(100% + 1.3px);
-            height: 40px;
+            height: 80px;
         }
-        .custom-shape-divider-bottom-espec-curta .shape-fill {
-            fill: #FFFFFF; 
+
+        .custom-shape-divider-bottom-sobre .shape-fill {
+            /* Cor da seção de baixo (#17152C conforme seu código anterior) */
+            fill: #ffffff; 
         }
     </style>
 
-    <div class="custom-shape-divider-bottom-espec-curta">
+    <div class="custom-shape-divider-bottom-sobre">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
         </svg>
@@ -383,7 +386,7 @@
     </div>
 
  <style>
-        .custom-shape-divider-bottom-consultoria {
+        .custom-shape-divider-bottom-processo {
             position: absolute;
             bottom: -1px; /* Cola no limite inferior */
             left: 0;
@@ -394,20 +397,20 @@
             z-index: 20;
         }
 
-        .custom-shape-divider-bottom-consultoria svg {
+        .custom-shape-divider-bottom-processo svg {
             position: relative;
             display: block;
             width: calc(100% + 1.3px);
             height: 80px;
         }
 
-        .custom-shape-divider-bottom-consultoria .shape-fill {
+        .custom-shape-divider-bottom-processo .shape-fill {
             /* Cor da seção de baixo (#17152C conforme seu código anterior) */
-            fill: #17152C; 
+            fill: #0f172a; 
         }
     </style>
 
-    <div class="custom-shape-divider-bottom-consultoria">
+    <div class="custom-shape-divider-bottom-processo">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
         </svg>
@@ -477,29 +480,32 @@
         </div>
     </div>
 
-    <style>
-        .custom-shape-divider-bottom-espec-curta {
+ <style>
+        .custom-shape-divider-bottom-porquefazer {
             position: absolute;
-            bottom: -1px;
+            bottom: -1px; /* Cola no limite inferior */
             left: 0;
             width: 100%;
             overflow: hidden;
             line-height: 0;
-            transform: rotate(180deg);
+            transform: rotate(180deg); 
             z-index: 20;
         }
-        .custom-shape-divider-bottom-espec-curta svg {
+
+        .custom-shape-divider-bottom-porquefazer svg {
             position: relative;
             display: block;
             width: calc(100% + 1.3px);
-            height: 40px;
+            height: 80px;
         }
-        .custom-shape-divider-bottom-espec-curta .shape-fill {
-            fill: #FFFFFF; 
+
+        .custom-shape-divider-bottom-porquefazer .shape-fill {
+            /* Cor da seção de baixo (#17152C conforme seu código anterior) */
+            fill: #ffffff; 
         }
     </style>
 
-    <div class="custom-shape-divider-bottom-espec-curta">
+    <div class="custom-shape-divider-bottom-porquefazer">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
         </svg>
@@ -509,7 +515,214 @@
 
 
 
+<!--SECAO GALERIA-->
 
+<section id="galeria" class="relative pt-24 pb-40 bg-[#FFFFFF] text-[#17152C] overflow-visible">
+    
+    <div class="max-w-5xl mx-auto px-6 relative z-10"> 
+        <div data-aos="fade-up" class="w-full text-left">
+    
+            <h3 class="text-2xl font-bold mb-12 text-[#182134]">
+                GALERIA DE SOLUÇÕES
+            </h3>
+
+            <div class="relative px-0 md:px-16">
+                
+                <div class="border-2 border-[#03FEFD]/30 rounded-[2.5rem] overflow-hidden p-2 transition-all duration-300 hover:border-[#03FEFD]/60">
+                    
+                    <div id="galeria-scroll" class="flex overflow-x-hidden snap-x snap-mandatory scrollbar-hide">
+                        
+                        <div class="min-w-full snap-center galeria-item">
+                            <div class="relative group cursor-zoom-in" onclick="abrirImagem(0)">
+                                <img src="./img/conciliacao_1.png" class="w-full h-[300px] md:h-[550px] object-cover rounded-[1.8rem]" alt="Imagem 1">
+                                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors rounded-[1.8rem] flex items-center justify-center">
+                                    <span class="opacity-0 group-hover:opacity-100 text-white bg-[#17152C] px-6 py-2 rounded-full text-sm">Ver Detalhes</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="min-w-full snap-center galeria-item">
+                            <div class="relative group cursor-zoom-in" onclick="abrirImagem(1)">
+                                <img src="./img/conciliacao_2.png" class="w-full h-[300px] md:h-[550px] object-cover rounded-[1.8rem]" alt="Imagem 2">
+                            </div>
+                        </div>
+
+                        <div class="min-w-full snap-center galeria-item">
+                            <div class="relative group cursor-zoom-in" onclick="abrirImagem(2)">
+                                <img src="./img/conciliacao_3.png" class="w-full h-[300px] md:h-[550px] object-cover rounded-[1.8rem]" alt="Imagem 3">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button onclick="moverGaleria('prev')" class="absolute left-[-15px] md:left-[-5px] top-1/2 -translate-y-1/2 group z-30 focus:outline-none">
+                    <div class="w-12 h-12 md:w-14 md:h-14 rounded-full border-2 border-[#17152C] flex items-center justify-center transition-all bg-white group-hover:bg-[#17152C] group-active:scale-90">
+                        <span class="text-[#17152C] group-hover:text-[#03FEFD] text-xl transition-colors">❮</span>
+                    </div>
+                </button>
+                
+                <button onclick="moverGaleria('next')" class="absolute right-[-15px] md:right-[-5px] top-1/2 -translate-y-1/2 group z-30 focus:outline-none">
+                    <div class="w-12 h-12 md:w-14 md:h-14 rounded-full border-2 border-[#17152C] flex items-center justify-center transition-all bg-white group-hover:bg-[#17152C] group-active:scale-90">
+                        <span class="text-[#17152C] group-hover:text-[#03FEFD] text-xl transition-colors">❯</span>
+                    </div>
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="modalImagem" class="fixed inset-0 bg-black/95 z-[100] hidden flex items-center justify-center p-4 opacity-0 transition-opacity duration-300 overflow-hidden select-none">
+        
+        <div id="modal-contador" class="absolute top-8 left-1/2 -translate-x-1/2 text-white bg-white/10 px-4 py-1 rounded-full text-sm font-medium z-[130] backdrop-blur-md border border-white/20">
+            1 / 3
+        </div>
+
+        <button onclick="fecharImagem()" class="absolute top-6 right-6 text-white text-5xl hover:text-[#03FEFD] z-[130] cursor-pointer">&times;</button>
+        
+        <button onclick="navegarModal('prev')" class="absolute left-6 top-1/2 -translate-y-1/2 group z-[120] focus:outline-none">
+            <div class="w-14 h-14 rounded-full border-2 border-white/30 flex items-center justify-center transition-all duration-300 group-hover:border-[#03FEFD] group-hover:bg-white/10 group-active:scale-95">
+                <span class="text-white group-hover:text-[#03FEFD] text-2xl">❮</span>
+            </div>
+        </button>
+        
+        <button onclick="navegarModal('next')" class="absolute right-6 top-1/2 -translate-y-1/2 group z-[120] focus:outline-none">
+            <div class="w-14 h-14 rounded-full border-2 border-white/30 flex items-center justify-center transition-all duration-300 group-hover:border-[#03FEFD] group-hover:bg-white/10 group-active:scale-95">
+                <span class="text-white group-hover:text-[#03FEFD] text-2xl">❯</span>
+            </div>
+        </button>
+
+        <div id="zoom-container" class="relative w-full h-full flex items-center justify-center cursor-zoom-in z-10">
+            <img id="imgModal" src="" class="max-w-full max-h-[90vh] rounded-lg transition-transform duration-300 ease-out origin-center" draggable="false">
+        </div>
+
+    </div>
+
+    <style>
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+        .galeria-item { transition: transform 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.4); }
+        .escala-clique { transform: scale(0.99); }
+        .cursor-grab { cursor: grab !important; }
+        .cursor-grabbing { cursor: grabbing !important; }
+    </style>
+
+    <script>
+        let currentIndex = 0;
+        let isZoomed = false;
+        let isMouseDown = false;
+        let startX, startY, translateX = 0, translateY = 0, lastTranslateX = 0, lastTranslateY = 0;
+
+        const modal = document.getElementById('modalImagem');
+        const imgModal = document.getElementById('imgModal');
+        const contador = document.getElementById('modal-contador');
+        const container = document.getElementById('zoom-container');
+        const galeriaScroll = document.getElementById('galeria-scroll');
+        const imagensGaleria = Array.from(galeriaScroll.querySelectorAll('img')).map(img => img.src);
+
+        function moverGaleria(direcao) {
+            const c = galeriaScroll;
+            c.classList.add('escala-clique');
+            const amt = c.clientWidth;
+            direcao === 'next' ? c.scrollBy({left: amt, behavior: 'smooth'}) : c.scrollBy({left: -amt, behavior: 'smooth'});
+            setTimeout(() => c.classList.remove('escala-clique'), 300);
+        }
+
+        function abrirImagem(index) {
+            currentIndex = index;
+            imgModal.src = imagensGaleria[currentIndex];
+            atualizarContador();
+            resetZoom();
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            setTimeout(() => modal.classList.add('opacity-100'), 10);
+        }
+
+        function navegarModal(direcao) {
+            if (direcao === 'next') currentIndex = (currentIndex + 1) % imagensGaleria.length;
+            else currentIndex = (currentIndex - 1 + imagensGaleria.length) % imagensGaleria.length;
+            
+            imgModal.style.opacity = '0';
+            setTimeout(() => {
+                imgModal.src = imagensGaleria[currentIndex];
+                atualizarContador();
+                resetZoom();
+                imgModal.style.opacity = '1';
+            }, 150);
+        }
+
+        function atualizarContador() {
+            contador.innerText = `${currentIndex + 1} / ${imagensGaleria.length}`;
+        }
+
+        function fecharImagem() {
+            modal.classList.remove('opacity-100');
+            setTimeout(() => { modal.classList.add('hidden'); modal.classList.remove('flex'); resetZoom(); }, 300);
+        }
+
+        function resetZoom() {
+            isZoomed = false;
+            translateX = 0; translateY = 0; lastTranslateX = 0; lastTranslateY = 0;
+            imgModal.style.transition = "transform 0.3s ease-out, opacity 0.2s ease-in-out";
+            imgModal.style.transform = `scale(1) translate(0px, 0px)`;
+            container.className = "relative w-full h-full flex items-center justify-center cursor-zoom-in z-10";
+        }
+
+        container.addEventListener('click', (e) => {
+            if (Math.abs(translateX - lastTranslateX) > 5 || Math.abs(translateY - lastTranslateY) > 5) return;
+            if (!isZoomed) {
+                isZoomed = true;
+                imgModal.style.transition = "transform 0.3s ease-out";
+                imgModal.style.transform = `scale(2.5) translate(0px, 0px)`;
+                container.classList.remove('cursor-zoom-in');
+                container.classList.add('cursor-grab');
+            } else {
+                resetZoom();
+            }
+        });
+
+        container.addEventListener('mousedown', (e) => {
+            if (!isZoomed) return;
+            isMouseDown = true;
+            container.classList.remove('cursor-grab');
+            container.classList.add('cursor-grabbing');
+            startX = e.pageX - lastTranslateX;
+            startY = e.pageY - lastTranslateY;
+            imgModal.style.transition = "none";
+        });
+
+        window.addEventListener('mousemove', (e) => {
+            if (!isMouseDown || !isZoomed) return;
+            e.preventDefault();
+            translateX = e.pageX - startX;
+            translateY = e.pageY - startY;
+            imgModal.style.transform = `scale(2.5) translate(${translateX}px, ${translateY}px)`;
+        });
+
+        window.addEventListener('mouseup', () => {
+            if (!isMouseDown) return;
+            isMouseDown = false;
+            container.classList.remove('cursor-grabbing');
+            if (isZoomed) container.classList.add('cursor-grab');
+            lastTranslateX = translateX;
+            lastTranslateY = translateY;
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (modal.classList.contains('hidden')) return;
+            if (e.key === 'ArrowRight') navegarModal('next');
+            if (e.key === 'ArrowLeft') navegarModal('prev');
+            if (e.key === 'Escape') fecharImagem();
+        });
+    </script>
+</section>
+
+
+
+
+
+
+<!-- CONTATO-->
 
 <section class="py-24 bg-gradient-to-b from-white to-slate-50">
     <div class="max-w-5xl mx-auto px-6 text-center">
