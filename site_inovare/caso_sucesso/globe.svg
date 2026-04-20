@@ -1,0 +1,22 @@
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Globo estilizado">
+  <defs>
+    <radialGradient id="ocean" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#34f0db" />
+      <stop offset="45%" stop-color="#0fb3ad" />
+      <stop offset="100%" stop-color="#0a6d78" />
+    </radialGradient>
+    <filter id="glow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <circle cx="250" cy="250" r="250" fill="url(#ocean)" filter="url(#glow)" />
+  <path d="M120 150C140 128 190 88 240 100C280 110 300 140 290 170C310 180 330 210 310 240C275 256 256 280 240 310C220 330 190 340 170 320C150 300 140 260 120 240C100 220 105 180 120 150Z" fill="#28e8df" />
+  <path d="M290 110C320 110 360 130 385 160C410 190 405 230 390 260C370 280 340 290 320 280C305 260 295 230 285 210C270 180 260 150 290 110Z" fill="#28e8df" />
+  <path d="M90 280C120 265 170 260 190 280C210 300 220 335 205 360C190 385 165 395 140 385C120 375 100 345 90 320C82 300 80 290 90 280Z" fill="#28e8df" />
+  <path d="M320 320C345 305 380 300 405 310C430 320 445 345 435 370C425 400 395 415 360 405C335 395 315 370 320 340C322 330 320 325 320 320Z" fill="#28e8df" />
+  <circle cx="250" cy="250" r="240" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="4" />
+</svg>

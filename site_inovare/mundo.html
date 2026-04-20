@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Inovare | Rotação Fluida</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --azul-marinho: #0a192f;
+            --verde-agua: #00d4bd;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 800vh; /* Altura para scroll */
+            background-color: var(--azul-marinho);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .mundo-viewport {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            pointer-events: none;
+        }
+
+        #mundo-img {
+            width: 450px;
+            height: auto;
+            display: block;
+            /* Will-change avisa o navegador para usar a GPU, deixando mais liso */
+            will-change: transform;
+        }
+
+        .instrucao {
+            position: fixed;
+            bottom: 40px;
+            width: 100%;
+            text-align: center;
+            color: var(--verde-agua);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 0.7rem;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="instrucao">Giro com Inércia e Suavidade</div>
+
+    <div class="mundo-viewport">
+        <img id="mundo-img" src="img/image_0.png" alt="Planeta Inovare">
+    </div>
+
+    <script>
+        const frames = [
+            "img/image_0.png",
+            "img/image_1.png",
+            "img/image_2.png"
+        ];
+
+        const imgElement = document.getElementById('mundo-img');
+        
+        // VARIÁVEIS DE CONTROLE DE FLUIDEZ
+        let targetScroll = 0;   // Onde o scroll REAL está
+        let currentScroll = 0;  // Onde a animação ESTÁ agora
+        const ease = 0.07;      // SUAVIDADE: Quanto menor (ex: 0.05), mais "amanteigado" e lento.
+        const speed = 0.3;      // VELOCIDADE: O quanto ele gira por pixel de scroll.
+
+        // Preload para não dar "piscada" branca
+        frames.forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
+
+        function updateAnimation() {
+            // Lógica de LERP (Linear Interpolation)
+            // A posição atual tenta alcançar o alvo em fatias de 7% (ease) por frame
+            currentScroll += (targetScroll - currentScroll) * ease;
+
+            // Calcula qual frame mostrar com base no progresso suavizado
+            const index = Math.floor(Math.abs(currentScroll * speed)) % frames.length;
+            
+            // Troca a imagem
+            const novoSrc = frames[index];
+            if (!imgElement.src.includes(novoSrc)) {
+                imgElement.src = novoSrc;
+            }
+
+            // Loop de animação contínuo (60fps)
+            requestAnimationFrame(updateAnimation);
+        }
+
+        // Captura o scroll do usuário
+        window.addEventListener('scroll', () => {
+            targetScroll = window.pageYOffset;
+        });
+
+        // Inicia o motor de renderização
+        updateAnimation();
+    </script>
+</body>
+</html>
