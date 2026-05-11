@@ -471,11 +471,18 @@
         }
 
         .testimonial-card .quote-icon {
+            display: inline-grid;
+            place-items: center;
+            width: 60px;
+            height: 60px;
+            background: rgba(3, 254, 253, 0.12);
+            border-radius: 18px;
             color: var(--accent);
-            font-size: 42px;
+            font-size: 32px;
             margin-bottom: 22px;
-            opacity: 0.95;
-            font-family: serif;
+            opacity: 1;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
         }
 
         .testimonial-text {
@@ -493,7 +500,7 @@
 
         .client-details span {
             display: inline-block;
-            color: var(--accent);
+            color: #008080;
             font-size: 0.85rem;
             font-weight: 700;
             text-transform: uppercase;
@@ -578,7 +585,7 @@
 
     <section class="testimonials-grid" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
         <article class="testimonial-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="240" onclick="openModal('Utilizamos o ERP Oracle Netsuite e contratamos a Compliance Soluções para transmitir nossa SPED EFDReinf. O cronograma de projeto era apertado e a implantação foi feita pela Inovare Soluções de forma bem rápida e profissional. O consultor foi bem atencioso e demonstrou que conhece do assunto. Ficamos satisfeitos com o atendimento recebido e considero que o sistema atende às expectativas.', 'Joel Pimentel da Silva', 'APAA – Associação Paulista dos Amigos da Arte')">
-            <div class="quote-icon">🙶</div>
+            <div class="quote-icon">"</div>
             <p class="testimonial-text">Utilizamos o ERP Oracle Netsuite e contratamos a Compliance Soluções para transmitir nossa...</p>
             <div class="client-details">
                 <h4>Joel Pimentel da Silva</h4>
@@ -590,7 +597,7 @@
         </article>
 
         <article class="testimonial-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="320" onclick="openModal('Sobre a Inovare, é um grande parceiro nosso, iniciamos a parceria por já conhecer o trabalho de um dos sócios e saber que o resultado iria ser positivo. Somos do grupo Centerbox Supermercados, iniciamos com a conciliadora quando tínhamos 17 lojas e agora temos 23 lojas e vamos continuar pois o trabalho vem dando certo. Uma empresa onde conhecemos um dos sócios, sabemos a responsabilidade que ele tem de entregar o resultado conforme combinado e não temos problema de estar sendo conciliado valores errados. No começo tivemos um pouco de dificuldade, pois precisávamos corrigir muitos problemas de configurações na nossa tesouraria, que estava impactando na conciliação automática, para que a conciliação pudesse rodar 100%. Tínhamos também títulos que já tinham sido quitados parcialmente, que deu trabalho pra gente, pois esses títulos não foram possíveis conciliar automático. Nós já recebíamos pela Inovare todas as diretrizes quando dava algum erro, o que a gente deveria fazer para ajustar a configuração e incluir a informação que faltava. O apoio da conciliadora sempre foi 100%, temos uma pessoa que nos atende de imediato , passamos demandas no grupo de WhastApp e somos respondido com rapidez. Todos os dias baixamos os relatórios de vendas e de pagamentos, ficando em aberto somente as inconsistências, onde também conseguimos identificar através de relatórios. Foi parametrizado pela própria conciliadora e liberado por nós, percentual de valores que podem ser quitados pra mais ou pra menos, que são os arredondamentos de taxas, quando se tem vendas parceladas. Dessa forma, se cada empresa tiver suas particularidades , eles sempre dão um jeito de configurar de uma forma que atenda cada particularidade de cada cliente, assim eu acredito. Hoje a conciliação está bem tranquila, onde conseguimos encontrar os erros de lançamentos no ato que importamos o relatório de vendas, que já conseguimos tratar, para que quando for importar o relatório de pagamentos, não tenha mais erros. Consegui colocar outras demandas para a pessoa que conciliava cartão manual, onde já ganhamos tempo.', 'Quézia Nobre', 'Grupo Centerbox')">
-            <div class="quote-icon">🙶</div>
+            <div class="quote-icon">"</div>
             <p class="testimonial-text">Sobre a Inovare, é um grande parceiro nosso, iniciamos a parceria por já conhecer o trabalho de um dos sócios...</p>
             <div class="client-details">
                 <h4>Quézia Nobre</h4>
@@ -602,7 +609,7 @@
         </article>
 
         <article class="testimonial-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="360" onclick="openModal('A Inovare tem nos atendido há alguns anos com bastante êxito,  nos auxiliando com suporte e ferramentas de conciliação de cartão e consultoria fiscal.', 'Adriano Santos', 'Cigana Beleza')">
-            <div class="quote-icon">🙶</div>
+            <div class="quote-icon">"</div>
             <p class="testimonial-text">A Inovare tem nos atendido há alguns anos com bastante êxito...</p>
             <div class="client-details">
                 <h4>Adriano Santos</h4>
@@ -614,8 +621,8 @@
         </article>
 
         <article class="testimonial-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" onclick="openModal('Utilizamos a solução de conciliação de cartão integrada com o TOTVS Consinco. O produto funciona bem e o principal diferencial é o atendimento prestado pela equipe da Inovare.', 'Edson Nascimento', 'Ismael  Supermercados')">
-            <div class="quote-icon">🙶</div>
-            <p class="testimonial-text">"Utilizamos a solução de conciliação de cartão integrada com o TOTVS Consinco...</p>
+            <div class="quote-icon">"</div>
+            <p class="testimonial-text">Utilizamos a solução de conciliação de cartão integrada com o TOTVS Consinco...</p>
             <div class="client-details">
                 <h4>Edson Nascimento</h4>
                 <span>Ismael  Supermercados</span>
@@ -626,8 +633,8 @@
         </article>
 
         <article class="testimonial-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" onclick="openModal('Com a implementação das automações para a EFD-Reinf e o regime de caixa na EFD Contribuições, reduzimos em 70% o tempo gasto com essas obrigações. O que antes era um gargalo manual, hoje é um processo sistêmico e confiável. Essa parceria nos deu a segurança necessária para escalar nossas operações internacionais com compliance total e foco no que realmente importa: a estratégia do nosso negócio.', 'Thiago Rocha', 'SASI')">
-            <div class="quote-icon">🙶</div>
-            <p class="testimonial-text">"Com a implementação das automações para a EFD-Reinf e o regime de caixa na EFD Contribuições, reduzimos em 70% o tempo gasto...</p>
+            <div class="quote-icon">"</div>
+            <p class="testimonial-text">Com a implementação das automações para a EFD-Reinf e o regime de caixa na EFD Contribuições, reduzimos em 70% o tempo gasto...</p>
             <div class="client-details">
                 <h4>Thiago Rocha</h4>
                 <span>SASI</span>
