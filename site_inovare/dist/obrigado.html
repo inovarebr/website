@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="refresh" content="15; url=index.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem decolou! | Inovare</title>
+    <style>
+        :root {
+            --primary: #00bcd4;    
+            --dark: #1e293b;       
+            --accent: #facc15;     
+            --bg: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            max-width: 600px;
+            position: relative;
+        }
+
+        /* Ilustração do Avião */
+        .plane-wrapper {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto 20px;
+            position: relative;
+        }
+
+        .main-svg {
+            width: 100%;
+            filter: drop-shadow(0 15px 25px rgba(0, 188, 212, 0.2));
+            animation: flightPath 4s ease-in-out infinite;
+        }
+
+        /* Texto Impactante */
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            letter-spacing: -2px;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+
+        h1 span {
+            color: var(--primary);
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #64748b;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        /* Botão Premium */
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            padding: 16px 45px;
+            background: var(--dark);
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 50px;
+            font-size: 1rem;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 2px solid transparent;
+        }
+
+        .btn-back:hover {
+            background: transparent;
+            color: var(--dark);
+            border-color: var(--dark);
+            transform: translateY(-5px);
+        }
+
+        /* Animação de Voo */
+        @keyframes flightPath {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(15px, -25px) rotate(-5deg); }
+        }
+
+        /* Trilha de fumaça animada */
+        .smoke-trail {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: drawLine 3s ease-out forwards;
+        }
+
+        @keyframes drawLine {
+            to { stroke-dashoffset: 0; }
+        }
+
+        /* Estado padrão do botão */
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    padding: 16px 45px;
+    background-color: #0f172a; /* Marinho Inovare */
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 50px;
+    border: 0px solid #00bcd4; /* Borda já em ciano */
+    transition: all 0.3s ease; /* Cria a transição suave da cor */
+    cursor: pointer;
+}
+
+/* Efeito ao colocar o mouse em cima (Hover) */
+.btn-back:hover {
+    background-color: #03FEFD; /* Muda o fundo para Azul Ciano */
+    color: #0f172a;            /* Muda o texto para Marinho para dar contraste */
+    transform: translateY(-3px); /* Leve pulinho para cima */
+    box-shadow: 0 10px 20px rgba(0, 188, 212, 0.4); /* Brilho neon suave */
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="plane-wrapper">
+            <svg class="main-svg" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+                <path class="smoke-trail" d="M50 350 Q150 350 180 250 T300 150" fill="none" stroke="#e2e8f0" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 15" />
+                
+                <g transform="translate(280, 100) rotate(-10)">
+                    <path d="M0 50 L120 0 L40 60 Z" fill="#0a1221" />
+                    <path d="M0 50 L120 0 L110 80 Z" fill="var(--primary)" />
+                    <path d="M40 60 L120 0 L110 80 Z" fill="rgba(255,255,255,0.2)" />
+                    <circle cx="120" cy="0" r="5" fill="var(--accent)" />
+                </g>
+
+                <circle cx="80" cy="100" r="20" fill="#f1f5f9" />
+                <circle cx="420" cy="280" r="15" fill="#f1f5f9" opacity="0.5" />
+            </svg>
+        </div>
+
+        <h1>Decolou<span>!</span></h1>
+        <p>Agradecemos pelo seu contato! <br> Em breve, nossa equipe retornará para falar com você.</p>
+        
+        <a href="index.html" class="btn-back">VOLTAR PARA O ÍNICIO</a>
+    </div>
+
+</body>
+</html>
