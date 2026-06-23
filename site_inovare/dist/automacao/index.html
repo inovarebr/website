@@ -271,9 +271,10 @@
 
 
 
-<!-- CONSULTORIA TÍTULO -->
+<!-- AUTOMACAO TÍTULO -->
 
-<style>.banner {
+<style>
+.banner {
   display: flex;
   align-items: center;   
   justify-content: center; 
@@ -293,27 +294,37 @@
     transform: translateY(0);
   }
 }
+
+/* Estilo adicional para o botão saiba mais */
+.btn-saiba-mais {
+  transition: all 0.3s ease;
+  border: 1px solid #00FFFF;
+}
+
+.btn-saiba-mais:hover {
+  background-color: #00FFFF;
+  color: #17152C;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
 </style>
 
-
-
-<section id="consultoria-essencia" class="banner py-32 bg-[#17152C] overflow-hidden flex items-center justify-center">
+<section id="consultoria-essencia" class="banner py-32 bg-[#17152C] overflow-hidden flex items-center justify-center relative">
     
     <div class="absolute inset-0 z-0">
-        <img src="../img/consultoria_1.png" alt="Fundo Consultoria Inovare" class="w-full h-full object-cover object-center">
+        <img src="../img/automacao.png" alt="Fundo Consultoria Inovare" class="w-full h-full object-cover object-center">
         
         <div class="absolute inset-0 bg-gradient-to-r from-[#17152C]/90 via-[#00FFFF]/20 to-[#17152C]/90 mix-blend-multiply"></div>
-        <div class="absolute inset-0 bg-[#17152C]/60"></div> </div>
+        <div class="absolute inset-0 bg-[#17152C]/60"></div> 
+    </div>
 
     <div class="max-w-7xl mx-auto px-6 relative z-10 text-center" data-aos="fade-down">
-        <h2 class="text-2xl md:text-5xl font-bold text-white uppercase tracking-tight" data-aos="zoom-in" data-aos-delay="200">
-    Consultoria: <br>
-    <span class="text-[#00FFFF]">Parte da Nossa Essência</span>
+        <h2 class="text-2xl md:text-5xl font-bold text-white uppercase tracking-tight mb-8" data-aos="zoom-in" data-aos-delay="200">
+            Automação<br> <span class="text-[#00FFFF]">Financeira</span>
         </h2>
+
     </div>
 
 </section>
-
 
 
 
@@ -355,11 +366,11 @@
 
 
 
-<!--SEÇAO CONSULTORIA-->
+<!--SEÇAO AUTOMACAO-->
 
     
 
-<section id="consultoria" class="relative pt-24 pb-40 bg-white text-[#17152C]overflow-visible">
+<section id="proxima-secao" class="relative pt-24 pb-40 bg-white text-[#17152C]overflow-visible">
 
 
     
@@ -367,14 +378,9 @@
         <div data-aos="fade-right" class="w-full">
             <div class="space-y-6 text-lg md:text-xl leading-relaxed text-slate-700 max-w-none text-left">
                 <p>
-                    A origem da <span class="font-bold text-[#182134]">Inovare</span> está diretamente ligada à trajetória de consultoria de seus sócios, que atuaram por muitos anos nesse segmento. Por isso, a consultoria sempre fez parte do nosso DNA.
+                    Você sabia que a automação financeira pode ser a <b>chave</b> para reduzir erros, economizar tempo e melhorar a eficiência do seu negócio? A automação de pagamentos é uma solução inteligente e estratégica para empresas que desejam modernizar suas rotinas financeiras e ganhar vantagem competitiva.
                 </p>
-                <p>
-                    Enxergamos a consultoria como uma porta de entrada para parcerias duradouras, baseadas na troca de experiências, na geração de valor e na construção de verdadeiras relações de confiança.
-                </p>
-                <p class="font-medium text-[#182134]">
-                    Estamos prontos para ouvir, colaborar e evoluir juntos. Fale conosco e vivencie essa experiência.
-                </p>
+
             </div>
         </div>
     </div>
@@ -387,7 +393,6 @@
             width: 100%;
             overflow: hidden;
             line-height: 0;
-            /* Invertemos para que a parte reta fique em cima e a onda "caia" sobre a seção de baixo */
             transform: rotate(180deg); 
             z-index: 20;
         }
@@ -420,80 +425,67 @@
 
 
 
-<!--NOSSAS ESPECIALIDADES-->
+<!--AUTOMACAO EXPLICACAO-->
     
 
-    <section id="especialidades" class="relative pt-20 pb-20 bg-[#17152C] text-white overflow-visible">
+    <section id="especialidades" class="relative pt-20 pb-40 bg-[#17152C] text-white overflow-visible">
     
     <div class="max-w-5xl mx-auto px-6 relative z-10"> 
         <div data-aos="fade-right" class="w-full">
-            
-            <h2 class="text-3xl font-bold mb-8 text-white">
-                Nossas Especialidades
-            </h2>
+
+        <h2 class="text-3xl font-bold mb-8 text-white">
+        O que é automação de pagamentos?
+
+        </h2>
+    
 
             <div class="space-y-6 text-lg md:text-xl leading-relaxed text-slate-300 max-w-none text-left">
                 <p>
-                    Na <span class="font-bold text-white">Inovare</span>, somos especializados na implantação e sustentação de soluções fiscais, apoiando nossos clientes desde a integração de dados até o acompanhamento completo do fechamento fiscal.
+                    A automação de pagamentos é a aplicação de soluções tecnológicas inteligentes para orquestrar, executar e monitorar todo o ciclo de saídas financeiras de uma empresa. Muito além de um simples agendamento bancário, ela integra sistemas de gestão corporativa a instituições financeiras, permitindo que todo o fluxo de capital ocorra com o mínimo de intervenção manual.
                 </p>
                 
                 <p>
-                    Também atuamos em desafios específicos como retificações de apurações, adequações a notificações governamentais ou geração de informações fiscais específicas.
+                    Essa digitalização abrange um ecossistema completo de obrigações. Isso inclui a leitura e liquidação automática de contas a pagar e notas fiscais nos prazos negociados, o repasse da folha de pagamento de forma sincronizada com o setor de Recursos Humanos, e a quitação de tributos e encargos com atualização de valores em tempo real para evitar multas. Além disso, a tecnologia permite o disparo de transferências e liquidação de boletos em frações de segundo, bem como a gestão inteligente de pagamentos recorrentes e remessas internacionais.
                 </p>
 
-                <p>
-                    Somos certificados pela <span class="font-bold text-white">Compliance Soluções</span> para a implementação de sua solução fiscal, com foco total no resultado e comprometimento técnico.
+                  <p>
+                Ao transferir a carga de trabalho operacional para o sistema, a automação transforma o departamento financeiro em um núcleo verdadeiramente estratégico. A empresa passa a mitigar erros e retrabalhos, eliminando falhas humanas comuns, como digitação incorreta de valores, pagamentos duplicados ou esquecimento de datas de vencimento. Com isso, a eficiência operacional aumenta drasticamente, liberando a equipe de tarefas repetitivas de digitação para focar em análise de dados, planejamento financeiro e redução de custos.
                 </p>
                 
-                <p class="pt-2 font-medium text-[#03FEFD]">
-                    Especialistas nos seguintes ERPs:
-                </p>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-                <div class="bg-[#03FEFD] text-[#17152C] font-bold py-4 px-2 rounded-xl shadow-lg flex items-center justify-center text-center text-sm border border-white/10 hover:scale-105 transition-transform" data-aos="flip-left" data-aos-delay="0">
-                    ORACLE CLOUD
-                </div>
-                <div class="bg-[#03FEFD] text-[#17152C] font-bold py-4 px-2 rounded-xl shadow-lg flex items-center justify-center text-center text-sm border border-white/10 hover:scale-105 transition-transform" data-aos="flip-left" data-aos-delay="100">
-                    NETSUITE
-                </div>
-                <div class="bg-[#03FEFD] text-[#17152C] font-bold py-4 px-2 rounded-xl shadow-lg flex items-center justify-center text-center text-sm border border-white/10 hover:scale-105 transition-transform" data-aos="flip-left" data-aos-delay="200">
-                    INFOR LN
-                </div>
-                <div class="bg-[#03FEFD] text-[#17152C] font-bold py-4 px-2 rounded-xl shadow-lg flex items-center justify-center text-center text-sm border border-white/10 hover:scale-105 transition-transform" data-aos="flip-left" data-aos-delay="300">
-                    TOTVS CONSINCO
-                </div>
             </div>
 
 
         </div>
     </div>
 
-    <style>
-        .custom-shape-divider-bottom-espec-curta {
+ <style>
+        .custom-shape-divider-bottom-sobre {
             position: absolute;
-            bottom: -1px;
+            bottom: -1px; /* Cola no limite inferior */
             left: 0;
             width: 100%;
             overflow: hidden;
             line-height: 0;
-            transform: rotate(180deg);
+            transform: rotate(180deg); 
             z-index: 20;
         }
-        .custom-shape-divider-bottom-espec-curta svg {
+
+        .custom-shape-divider-bottom-sobre svg {
             position: relative;
             display: block;
             width: calc(100% + 1.3px);
-            height: 40px;
+            height: 80px;
         }
-        .custom-shape-divider-bottom-espec-curta .shape-fill {
-            /* Se a próxima seção for branca, mantenha #FFFFFF */
-            /* Se a próxima seção for outra, mude a cor abaixo */
-            fill: #FFFFFF; 
+
+        .custom-shape-divider-bottom-sobre .shape-fill {
+            /* Cor da seção de baixo (#17152C conforme seu código anterior) */
+            fill: #ffffff; 
         }
     </style>
 
-    <div class="custom-shape-divider-bottom-espec-curta">
+    <div class="custom-shape-divider-bottom-sobre">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
         </svg>
@@ -506,157 +498,95 @@
 
 
 
-<!--SEÇAO OBRIGACOES FISCAIS-->
 
-<section id="obrigacoes-fiscais" class="relative pt-24 pb-40 bg-white text-[#17152C] overflow-visible">
-    <div class="max-w-5xl mx-auto px-6 relative z-10">
-        
-        <!-- Introdução -->
-        <div data-aos="fade-right" class="mb-12">
-            <p class="text-lg md:text-xl leading-relaxed text-slate-700 max-w-none text-left">
-                Estamos atentos às mudanças trazidas pela <span class="font-bold text-[#182134]">Reforma Tributária</span>, e prontos para apoiar nossos clientes na adequação dos sistemas às novas exigências legais.
-            </p>
-        </div>
+<!--ERPS-->
+    
 
-        <!-- Título Obrigações -->
-        <h3 class="text-2xl font-bold mb-8 text-[#182134]" data-aos="fade-up">
-            Obrigações Fiscais Atendidas com Excelência
-        </h3>
-
-        <!-- Grid de Obrigações -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            <div class="flex gap-4 items-start" data-aos="fade-up" data-aos-delay="0">
-                <div class="flex-shrink-0">
-                    <div class="flex items-center justify-center h-8 w-8 rounded-md bg-[#03FEFD] text-[#182134]">
-                        <i class="fas fa-check text-sm"></i>
-                    </div>
-                </div>
-                <div>
-                    <p class="font-bold text-[#182134]">Emissão de Documentos Fiscais</p>
-                    <p class="text-sm text-slate-600">NF-e, NFS-e, CT-e, NFCOM</p>
-                </div>
+<section id="especialidades" class="relative pt-24 pb-40 bg-white text-[#17152C] overflow-visible">
+    
+    <div class="max-w-5xl mx-auto px-6 relative z-10"> 
+        <div data-aos="fade-right" class="w-full text-left">
+    
+            <div class="mb-12">
+                <h3 class="text-3xl md:text-4xl font-extrabold mb-8 text-[#17152C] tracking-tight">
+                    Quais os benefícios?
+                </h3>
             </div>
 
-            <div class="flex gap-4 items-start" data-aos="fade-up" data-aos-delay="100">
-                <div class="flex-shrink-0">
-                    <div class="flex items-center justify-center h-8 w-8 rounded-md bg-[#03FEFD] text-[#182134]">
-                        <i class="fas fa-check text-sm"></i>
+            <div class="grid gap-6 max-w-4xl sm:grid-cols-2">
+                <div class="flex gap-4 items-start">
+                    <div class="mt-1 text-[#03FEFD] text-2xl font-bold">•</div>
+                    <div>
+                        <p class="text-lg md:text-xl font-semibold text-[#17152C] mb-2">Redução de erros humanos</p>
+                        <p class="text-base md:text-lg text-slate-700 leading-relaxed">Ao automatizar processos manuais, você elimina falhas comuns, como pagamentos duplicados, atrasos ou preenchimento incorreto de dados.</p>
                     </div>
                 </div>
-                <div>
-                    <p class="font-bold text-[#182134]">EFD ICMS/IPI</p>
-                    <p class="text-sm text-slate-600">Sped Fiscal</p>
-                </div>
-            </div>
 
-            <div class="flex gap-4 items-start" data-aos="fade-up" data-aos-delay="200">
-                <div class="flex-shrink-0">
-                    <div class="flex items-center justify-center h-8 w-8 rounded-md bg-[#03FEFD] text-[#182134]">
-                        <i class="fas fa-check text-sm"></i>
+                <div class="flex gap-4 items-start">
+                    <div class="mt-1 text-[#03FEFD] text-2xl font-bold">•</div>
+                    <div>
+                        <p class="text-lg md:text-xl font-semibold text-[#17152C] mb-2">Economia de tempo e recursos</p>
+                        <p class="text-base md:text-lg text-slate-700 leading-relaxed">O tempo da sua equipe é precioso. Com a automação, atividades repetitivas são feitas em segundos, liberando o time para tarefas mais estratégicas.</p>
                     </div>
                 </div>
-                <div>
-                    <p class="font-bold text-[#182134]">EFD Contribuições</p>
-                    <p class="text-sm text-slate-600">Sped PIS/COFINS</p>
-                </div>
-            </div>
 
-            <div class="flex gap-4 items-start" data-aos="fade-up" data-aos-delay="300">
-                <div class="flex-shrink-0">
-                    <div class="flex items-center justify-center h-8 w-8 rounded-md bg-[#03FEFD] text-[#182134]">
-                        <i class="fas fa-check text-sm"></i>
+                <div class="flex gap-4 items-start">
+                    <div class="mt-1 text-[#03FEFD] text-2xl font-bold">•</div>
+                    <div>
+                        <p class="text-lg md:text-xl font-semibold text-[#17152C] mb-2">Maior controle e previsibilidade financeira</p>
+                        <p class="text-base md:text-lg text-slate-700 leading-relaxed">Com dashboards e relatórios automáticos, você tem uma visão clara e em tempo real de todas as suas movimentações financeiras.</p>
                     </div>
                 </div>
-                <div>
-                    <p class="font-bold text-[#182134]">DCTFWeb e MIT</p>
-                    <p class="text-sm text-slate-600">Declarações de competência federal</p>
-                </div>
-            </div>
 
-            <div class="flex gap-4 items-start" data-aos="fade-up" data-aos-delay="400">
-                <div class="flex-shrink-0">
-                    <div class="flex items-center justify-center h-8 w-8 rounded-md bg-[#03FEFD] text-[#182134]">
-                        <i class="fas fa-check text-sm"></i>
+                <div class="flex gap-4 items-start">
+                    <div class="mt-1 text-[#03FEFD] text-2xl font-bold">•</div>
+                    <div>
+                        <p class="text-lg md:text-xl font-semibold text-[#17152C] mb-2">Cumprimento de prazos e obrigações</p>
+                        <p class="text-base md:text-lg text-slate-700 leading-relaxed">Pagamentos em dia significam menos multas, juros e uma reputação sólida com fornecedores e parceiros.</p>
                     </div>
                 </div>
-                <div>
-                    <p class="font-bold text-[#182134]">GIA e Arquivos Estaduais</p>
-                    <p class="text-sm text-slate-600">Demais arquivos de apuração</p>
-                </div>
-            </div>
 
-            <div class="flex gap-4 items-start" data-aos="fade-up" data-aos-delay="500">
-                <div class="flex-shrink-0">
-                    <div class="flex items-center justify-center h-8 w-8 rounded-md bg-[#03FEFD] text-[#182134]">
-                        <i class="fas fa-check text-sm"></i>
+                <div class="flex gap-4 items-start sm:col-span-2">
+                    <div class="mt-1 text-[#03FEFD] text-2xl font-bold">•</div>
+                    <div>
+                        <p class="text-lg md:text-xl font-semibold text-[#17152C] mb-2">Escalabilidade</p>
+                        <p class="text-base md:text-lg text-slate-700 leading-relaxed">À medida que sua empresa cresce, o volume de pagamentos também aumenta. A automação garante que seus processos acompanhem esse crescimento sem perder eficiência.</p>
                     </div>
-                </div>
-                <div>
-                    <p class="font-bold text-[#182134]">Sped REINF</p>
-                    <p class="text-sm text-slate-600">Retenções de impostos e contribuições</p>
-                </div>
-            </div>
-
-            <div class="flex gap-4 items-start" data-aos="fade-up" data-aos-delay="600">
-                <div class="flex-shrink-0">
-                    <div class="flex items-center justify-center h-8 w-8 rounded-md bg-[#03FEFD] text-[#182134]">
-                        <i class="fas fa-check text-sm"></i>
-                    </div>
-                </div>
-                <div>
-                    <p class="font-bold text-[#182134]">ECD</p>
-                    <p class="text-sm text-slate-600">Escrituração Contábil Digital</p>
-                </div>
-            </div>
-
-            <div class="flex gap-4 items-start" data-aos="fade-up" data-aos-delay="700">
-                <div class="flex-shrink-0">
-                    <div class="flex items-center justify-center h-8 w-8 rounded-md bg-[#03FEFD] text-[#182134]">
-                        <i class="fas fa-check text-sm"></i>
-                    </div>
-                </div>
-                <div>
-                    <p class="font-bold text-[#182134]">ECF</p>
-                    <p class="text-sm text-slate-600">Escrituração Contábil Fiscal</p>
                 </div>
             </div>
         </div>
-
-        <!-- Observação Final -->
-        <div class="p-6 bg-slate-50 rounded-2xl border-l-4 border-[#03FEFD] mt-8" data-aos="fade-up" data-aos-delay="800">
-            <p class="text-slate-600 text-base">
-                <span class="font-bold text-[#182134]">Expertise completa:</span> Essas são apenas algumas das principais obrigações. Temos expertise para atender diversas outras necessidades fiscais específicas do seu negócio.
-            </p>
-        </div>
-
     </div>
 
-    <style>
-        .custom-shape-divider-bottom-consultoria {
+ <style>
+        .custom-shape-divider-bottom-porquefazer {
             position: absolute;
-            bottom: -1px; /* Cola no limite inferior */
+            bottom: -1px; 
             left: 0;
             width: 100%;
             overflow: hidden;
             line-height: 0;
-            /* Invertemos para que a parte reta fique em cima e a onda "caia" sobre a seção de baixo */
             transform: rotate(180deg); 
             z-index: 20;
         }
 
-        .custom-shape-divider-bottom-consultoria svg {
+        .custom-shape-divider-bottom-porquefazer svg {
             position: relative;
             display: block;
             width: calc(100% + 1.3px);
             height: 80px;
         }
 
-        .custom-shape-divider-bottom-consultoria .shape-fill {
-            /* Cor da seção de baixo (#17152C conforme seu código anterior) */
-            fill: #17152C; 
+        .custom-shape-divider-bottom-porquefazer .shape-fill {
+            /* Cor do divisor ajustada para branco para combinar com o novo fundo */
+            fill: #ffffff; 
         }
     </style>
 
+    <div class="custom-shape-divider-bottom-porquefazer">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
 </section>
 
 
@@ -664,13 +594,12 @@
 
 
 
+<!-- CONTATO-->
 
-
-
-<section class="py-24 bg-gradient-to-b from-white to-slate-50">
+<section class="py-10 bg-gradient-to-b from-white to-slate-50">
     <div class="max-w-5xl mx-auto px-6 text-center">
-        <div data-aos="fade-up" class="mb-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-[#182134] mb-6 uppercase tracking-tight leading-tight">
+        <div data-aos="fade-up" class="mb-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#182134] mb-4 uppercase tracking-tight leading-tight">
                 Pronto para evoluir sua<br>operação fiscal?
             </h2>
             <p class="text-lg md:text-xl text-slate-600 font-semibold">
@@ -678,7 +607,7 @@
             </p>
         </div>
         
-        <div data-aos="zoom-in" data-aos-delay="200" class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-10">
+        <div data-aos="zoom-in" data-aos-delay="200" class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-6">
             <a href="../index.html#contato" class="inline-block bg-[#03FEFD] text-[#182134] font-bold py-4 px-12 rounded-full text-base hover:bg-[#182134] hover:text-[#03FEFD] transition duration-300 transform hover:scale-105 shadow-lg border-2 border-[#03FEFD]">
                 FALE COM ESPECIALISTA
             </a>
@@ -688,6 +617,7 @@
         </div>
     </div>
 </section>
+
 
 
 
@@ -921,12 +851,6 @@
 </footer>
 
 
-
-
-
-
-<div>
-
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({
@@ -937,7 +861,6 @@
     offset: 50
   });
 </script>
-
 
 </body>
 </html>
