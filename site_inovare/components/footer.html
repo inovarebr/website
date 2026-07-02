@@ -219,8 +219,11 @@
         </div>
 
         <div class="s-footer__bottom">
-            <p>© 2026 Inovare Soluções e Sistemas. Todos os direitos reservados.</p>
+            <p>© <span id="footer-year">2026</span> Inovare Soluções e Sistemas. Todos os direitos reservados.</p>
             <p class="location">Ribeirão Preto - SP. </p>
         </div>
     </div>
 </footer>
+<script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+</script>
