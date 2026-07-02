@@ -1,0 +1,13 @@
+{
+  "name": "site_inovare",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node ./build.js",
+    "deploy": "node ./deploy.js"
+  },
+  "dependencies": {
+    "oci-common": "^2.115.0",
+    "oci-objectstorage": "^2.115.0"
+  }
+}

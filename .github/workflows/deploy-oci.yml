@@ -1,0 +1,43 @@
+name: Deploy OCI Website
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "site_inovare/**"
+      - ".github/workflows/deploy-oci.yml"
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site_inovare
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build static files
+        run: node ./build.js
+
+      - name: Deploy to OCI Object Storage (SDK)
+        # As mesmas secrets atuais são expostas como variáveis de ambiente
+        # para o deploy.js montar o provider sem OCI CLI e sem ~/.oci/config.
+        env:
+          OCI_CLI_USER: ${{ secrets.OCI_CLI_USER }}
+          OCI_CLI_TENANCY: ${{ secrets.OCI_CLI_TENANCY }}
+          OCI_CLI_FINGERPRINT: ${{ secrets.OCI_CLI_FINGERPRINT }}
+          OCI_CLI_KEY_CONTENT: ${{ secrets.OCI_CLI_KEY_CONTENT }}
+          OCI_CLI_REGION: ${{ secrets.OCI_CLI_REGION }}
+        run: node ./deploy.js
