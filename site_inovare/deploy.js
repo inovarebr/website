@@ -8,6 +8,7 @@ const DIST_DIR = path.join(__dirname, "dist");
 const BUCKET_NAME = "inovare_website";
 const CONCURRENCY = 5;
 
+// Equivalente ao --auto-content-type da OCI CLI para extensões mais comuns do site.
 const CONTENT_TYPES = {
   ".html": "text/html; charset=utf-8",
   ".css": "text/css; charset=utf-8",
@@ -31,6 +32,7 @@ function getRequiredEnv(name) {
 }
 
 function normalizePrivateKey(rawKey) {
+  // Suporta secret armazenada com "\n" literal sem quebrar quando já vem com quebra real.
   if (rawKey.includes("\\n")) {
     return rawKey.replace(/\\n/g, "\n");
   }
@@ -45,8 +47,10 @@ function getContentType(filePath) {
 function getCacheControl(filePath) {
   const ext = path.extname(filePath).toLowerCase();
   if (ext === ".html") {
+    // HTML deve ser revalidado para refletir alterações de conteúdo rapidamente.
     return "no-cache, no-store, must-revalidate";
   }
+  // Assets estáticos podem ficar em cache longo para melhor performance.
   return "public, max-age=31536000, immutable";
 }
 
@@ -74,6 +78,7 @@ async function collectFilesRecursively(dir, rootDir = dir) {
 }
 
 async function runWithConcurrency(items, limit, worker) {
+  // Pool simples de workers para limitar chamadas simultâneas à API.
   let cursor = 0;
   const errors = [];
 
