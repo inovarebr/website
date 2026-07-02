@@ -122,7 +122,7 @@ async function createObjectStorageClient() {
     fingerprint,
     keyContent,
     null,
-    region
+    null
   );
 
   const client = new objectStorage.ObjectStorageClient({
